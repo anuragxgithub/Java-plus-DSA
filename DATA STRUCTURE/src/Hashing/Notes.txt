@@ -1,0 +1,7 @@
+Hashing is the process of transforming a given key or plain text into another value.
+We use hashFunction to do so.
+
+Input           hashFunction               Output
+
+anurag   ->     cryptographic     ->    AXMDVV 11SE3D
+                hash function           LNSE23 SJMZW2

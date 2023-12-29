@@ -1,0 +1,25 @@
+Imagine like this: how nodes creation internally look like
+bsically when you are creating a new Node it is just a random object in the heap memory 
+you use different class variables(next, prev , head and so on) so that they can be linked to each
+other. Now these random objects / nodes which we created forms a link are are connected to each
+other that is what linked list is. SIMPLE. 
+
+Also note one thing while implementing the linked and their methods take care of the null
+pointer exception it heappens when you try to access something in the next node 
+but there is no node their.
+This usually happens when you use dot operator 2 times.
+to fix this use if condition that makes sure that the node which you try to access within exists
+or not if not exists then it will give null value.  
+
+QUESTIONS RELATED NOTES:
+1) Whenever there is cycle detection  use fast and slow pointer method. or
+   ("Floyd's Tortoise and Hare" algorithm)... LeetCode: 141
+   And there could be follow up question that return the length of the loop/cycle.
+   In this case simple when slow == fast keep fast as it is let the slow complete one cycle
+   with counting the no. of nodes in cycle. Simple.
+
+   Also there could be question like find the node where cycle begins. Here also you will use 
+   two pointer accordingly. LeetCode: 142
+
+   Or whenever if you are given to find a particular node in the linked list try to approach 
+   and check whether it can be solved fast and slow pointer method.

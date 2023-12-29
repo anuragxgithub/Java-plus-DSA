@@ -1,0 +1,44 @@
+Look while solving patterns questions relate it with the loops(like how we use
+to approach problems there). And We already know what we can do with loops can also be done
+with recursion so if your concept is clear it really easy.
+Think every recursion calls as row, col and spaces(if needed) loops and perform the same task here.
+
+We know that row loop do nothing only provide iteration
+and col loop do some printing so here we'll do the same.
+Here row loop will be in last (i.e, row equivalent recursion will be in last)
+
+Also debug the code to understand how fn call are removed one by one from stack.
+
+IMPORTANT 🌟
+While giving condition (using if) for recursions like row,col and spaces they must be exclusive
+which means they should be separated so use if else or elif if more than 2 conditions are there
+b/z if you don't use elif after the base condition hits the recursion again starts and hence will never
+end.
+Eg:
+---------------------------------------------------------------------
+Wrong::
+        if(space <= rowEntered-r) {  //For Spaces
+            System.out.print(" ");
+            printPattern(r,c,space+1,rowEntered);
+        }
+        if(c <= (r*2)-1) {      //For columns
+            System.out.print("*");
+            printPattern(r, c + 1, space, rowEntered);
+        } else {
+            System.out.println();
+            printPattern(r+1,1,1,rowEntered);
+        }
+ b/z "if()" condition for recursion for "spaces" is exclusive.
+
+---------------------------------------------------------------
+Right
+        if(space <= rowEntered-r) {  //For Spaces
+            System.out.print(" ");
+            printPattern(r,c,space+1,rowEntered);
+        } else if(c <= (r*2)-1) {      //For columns
+            System.out.print("*");
+            printPattern(r, c + 1, space, rowEntered);
+        } else {
+            System.out.println();
+            printPattern(r+1,1,1,rowEntered);
+        }

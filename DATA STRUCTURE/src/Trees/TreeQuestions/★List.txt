@@ -1,0 +1,41 @@
+These are thse questions which I solved while learning the tree concepts and about its questions:
+EasyPeasies 
+1. LeetCode 102
+2. LeetCode 637  (Google)
+3. Level Order Successor of a node. (Google)   
+4. LeetCode 103   (fang)
+5. LeetCode 107   (fang)
+6. LeetCode 116    (Google London)
+7. LeetCode 199   (fb, amzon,etc)
+8. LeetCode 993  (FMA)
+9. LeetCode 101    (LinkedIn, Fb, Microsoft, etc)
+
+----DFS(PreOder, PostOrder & InOrder stuff) Thing started from here----
+
+10. LeetCode 543 (Faang)
+11. LeetCode 226 (Faang)  easypeasy
+12. LeetCode 104 (Faang, linkedIn, etc)
+13. LeetCode 108 (Fag)  
+14. LeetCode 114  (fb, amazon, microsoft)
+15 LeetCode 98  (FAANG)  Good Question.   In these types of questions have patience and use pen and paper properly. Have believe in yourself.
+16. LeetCode 236 (FAANG)  (Important Question)	           Challenges your understanding of recursion
+17. LeetCode 230 (Amazon, LinkedIn)  (Good Question)  Challenges your understanding of recursion
+NOTE: Practice Path sum questions properly.
+18. LeetCode 105 (Many companies)  Important question   (you can try to do the same thing with inorder and postorder)
+19. LeetCode 297 (Important Question)  Link to understand the problem is given below:
+https://youtu.be/Qtf8ieq3zco?si=QxkGQtEF66iz2s3R (this is to understand only my solution is in java and uses queue)  also done here in this package you can debug if you want in file name : TreeNode4
+Copy paste the same code to quetion LeetCode 449   EasyPeasy
+Thats why its clever move to undersand & solve this question and don't forget bcz same thing will apply for all the questions like this.
+
+20. LeetCode 112  (Amazon)
+21. Leetcode 129 (FMA)
+22. LeetCode 124 (ALL COMPANIES) (Practice and Understand this problem)
+23. Done in this package. Que: (given Path exist or not from root to leaf)  FILE NAME : TreeNode2
+
+THIS BELOW ONE IS ACTUALLY CHALLENGING QUESTION
+24. https://youtu.be/9D-vP-jcc-Y?si=APZ2n8H75fMhOlku   TIME STAMP : 4:26:38
+
+25. Done in this package : Iterative approach of DFS using stack.  FILE NAME : TreeNode3
+
+To solve more questions on Tree you can check out this list.
+https://www.geeksforgeeks.org/top-50-tree-coding-problems-for-interviews/

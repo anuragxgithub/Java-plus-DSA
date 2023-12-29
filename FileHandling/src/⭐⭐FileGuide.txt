@@ -1,0 +1,43 @@
+Intro
+ReadingFromTextFile
+Write
+Write2
+FileClass
+
+
+Overall summary :
+Stream : a sequece/collection of data.
+
+When we talk about file handling in java we first talk about the two types of streams:
+1) Byte Stream : Suitable for handling raw binary data / non-textual data. But that does not mean
+it can't handle textual file.
+Byte Stream has wot classes for input and output.
+  1) InputStream 
+  2) OutputStream
+  and these are two abstract classes which have multiple subclasses which we use accordingly to
+  read and write data.
+  InputStream: and its SUBCLASSES (FileInputStream, ByteArrayInputStream, etc.) for reading binary data.
+  OutputStream: and its subclasses (FileOutputStream, ByteArrayOutputStream, etc.) for writing binary data.
+
+2) Character Stream : Suitable for handling the textual data like .txt files.
+Character Stream has two classes for input and output.
+  1) Reader
+  2) Writer
+  and these are two abstract classes which have multiple subclasses which we use accordingly to
+  read and write text data.
+  Reader: and its subclasses (FileReader, BufferedReader, etc.) for reading text data.
+  Writer: and its subclasses (FileWriter, BufferedWriter, etc.) for writing text data.
+
+NOTE:
+If the class name is having 'InputStream' for reading or 'OutputStream' for writing in its name
+then that class is used to represent the Byte streams.
+Eg: ByteArrayOutputStream, FileInputStream, etc.
+
+If the class name is having 'Reader; for reading or 'Writer' for writing in its name
+then that class is used to represent Character streams.
+Eg: FileReader, BufferedReader, FileWriter, etc.
+
+
+Find out more about these both if you want to know:
+InputStreamReader and
+OutputStreamWriter 
