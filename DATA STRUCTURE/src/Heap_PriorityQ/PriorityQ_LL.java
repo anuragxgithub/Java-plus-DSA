@@ -34,7 +34,7 @@ public class PriorityQ_LL<T extends Comparable<T>> {
         }
     }
 
-    // insertion  O(n) (add elements according) here priority will be the smallest  
+    // insertion  O(n) (add elements accordingly) here priority will be the smallest  
     private void add(T value) {
         if(head == null) {
             ListNode<T> node = new ListNode<>(value);
