@@ -103,7 +103,7 @@ public class DFS_Graph {
     }
 
     // DFS USING STACK -1       (This is my own implementation)
-    public static void dfsUsingStack(ArrayList<Edge>[] graph, boolean[] visited, int curr) {
+    public static void dfsUsingStack(ArrayList<Edge>[] graph, boolean[] visited, int curr) {  // O(V+E)
         Stack<Integer> stack = new Stack<>();
         stack.push(curr);
         System.out.print(curr + " ");
@@ -129,7 +129,7 @@ public class DFS_Graph {
     }
 
     // DFS USING STACK -2
-    public static void DFS_Stack(ArrayList<Edge>[] graph, int curr) {
+    public static void DFS_Stack(ArrayList<Edge>[] graph, int curr) {   // O(V+E)
         boolean[] visited = new boolean[graph.length];
         Stack<Integer> stack = new Stack<>();
 
