@@ -1,5 +1,7 @@
-// Here we'll traverse through the graph using BFS(Breadth First Search) or Level Order Traversal
-
+/*
+Here we'll traverse through the graph using BFS(Breadth First Search) or Level Order Traversal
+Graph here is implemented using Adjacency List (Array of ArrayList).
+*/
 package Graphs;
 
 import java.util.ArrayList;
@@ -66,7 +68,7 @@ public class BFS_Graph {
         while(!q.isEmpty()) {
             int current = q.poll();
             if(!visited[current]) {
-                System.out.println(current);
+                System.out.print(current + " ");
                 visited[current] = true;
                 // add its immediate neighbours to the queue
                 for(int i = 0; i < graph[current].size(); i++) {
@@ -88,7 +90,7 @@ public class BFS_Graph {
               2 --------- 4     6
 
               This is unweighted graph but we will still take weight of each node as 1 to follow standard. We can skip it too.
-         */
+        */
 
         int V = 7;
         ArrayList<Edge>[] graph = new ArrayList[V];

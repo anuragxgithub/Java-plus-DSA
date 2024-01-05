@@ -1,5 +1,11 @@
-// Here we will implement graph using Adjacency List (Array of ArrayList).
-// Easy Peasy 
+/*
+Here we will implement graph using Adjacency List (Array of ArrayList).
+Easy Peasy.
+Here I implemented the graph using Adjacency List (Array of ArrayList). Which is commonly used in many
+cases for implementing graph because it has advantage like:
+- it does not store any unnecessary info.
+- it can perform common operation like finding neighbor in almost constant time.
+*/
 package Graphs;
 
 import java.util.Arrays;
