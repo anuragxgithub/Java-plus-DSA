@@ -1,32 +1,26 @@
-/*
-Here we'll traverse through the graph using BFS(Breadth First Search) or Level Order Traversal
-Graph here is implemented using Adjacency List (Array of ArrayList).
-*/
 package Graphs;
 
-import java.util.ArrayList;
-import java.util.Queue;
-import java.util.LinkedList;
+import java.util.*;
 
-
-public class BFS_Graph {
+public class AllPaths_SrcToTar {
     static class Edge {
         int src;
         int dest;
         int wt;
 
-        public Edge(int s, int d, int w) {
+        public Edge(int s, int d, int wt) {
             this.src = s;
             this.dest = d;
-            this.wt = w;
+            this.wt = wt;
         }
     }
 
-    static void createGraph(ArrayList<Edge>[] graph) {
-        // Never forget to initialise the arraylist first
+    public static void createGraph(ArrayList<Edge>[] graph) {
+        // first of all initialising each indices of array
         for(int i = 0; i < 7; i++) {
             graph[i] = new ArrayList<>();
         }
+
         // 0 vertex
         graph[0].add(new Edge(0, 1, 1));
         graph[0].add(new Edge(0, 2, 1));
@@ -58,28 +52,22 @@ public class BFS_Graph {
         graph[6].add(new Edge(6, 5, 1));
     }
 
-    public static void bfs(ArrayList<Edge>[] graph) {    // O(V + E)
-        // create a queue
-        Queue<Integer> q = new LinkedList<>();
-        // create a visited array of size V to monitor visited nodes
-        boolean[] visited = new boolean[graph.length];
-        q.add(0);
-
-        while(!q.isEmpty()) {
-            int current = q.poll();
-            if(!visited[current]) {
-                System.out.print(current + " ");
-                visited[current] = true;
-                // add its all adjacent/immediate neighbours to the queue
-                for(int i = 0; i < graph[current].size(); i++) {
-                    Edge e = graph[current].get(i);
-                    q.add(e.dest);
-                }
-            }
+    // O(V^V)
+    public static void allPaths(ArrayList<Edge>[] graph, boolean[] visited, int current, int target, String path) {
+        if(current == target) {
+            System.out.println(path);
+            return;
         }
 
+        for(int i = 0; i < graph[current].size(); i++) {
+            int neighbor = graph[current].get(i).dest;
+            if(!visited[neighbor]) {
+                visited[current] = true;        // should be inside this if block bcz make it true only when the neigbor is not visited yet other wise if you do it earlier in code backtracking of this would not be possible
+                allPaths(graph, visited, neighbor, target, path+" -> "+neighbor);
+                visited[current] = false;  // backtracking
+            }
+        }
     }
-
 
     public static void main(String[] args) {
         /*
@@ -91,12 +79,12 @@ public class BFS_Graph {
 
               This is unweighted graph but we will still take weight of each node as 1 to follow standard. We can skip it too.
         */
-
-        int V = 7;
+        int V = 7; 
         ArrayList<Edge>[] graph = new ArrayList[V];
         createGraph(graph);
-        bfs(graph);
+
+        // we will use dfs algo to solve this problem (we are given with src and destination)
+        allPaths(graph, new boolean[V], 0, 5, "0");
 
     }
-    
-}
+} 

@@ -77,5 +77,7 @@ public class GraphImplementation {
             System.out.println("Neighbour " + (i+1) + " : " + graph[1].get(i).dest); 
         }
     }
-
 }
+
+// NOTE : YOU CREATE ADJACENCY LIST OF INTEGER WITHOUT THE EDGE CLASS. FOR THAT YOU HAVE TO STORE THE NUMBER OF 
+// VERTICES CONNECTED TO EACH ith NODE/VERTEX OF GRAPH[i] IN INTEGER VALUES.
