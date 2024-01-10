@@ -1,0 +1,102 @@
+WHILE CALCULATING TIME COMPLEXITY HERE WE DIDN'T CONSIDER TIME OF FOR LOOP WHICH TAKES O(n).
+I only discussed about the find and union operation complexity and time complexity of union ultimately depends upon
+find method operation.
+
+TIME AND SPACE COMPLEXITY OF 
+DISJOINT SET DATA STRUCTURE WITH (UNION BY RANK OR UNION BY SIZE) WITH PATH COMPRESSION INCLUDING EVERYTHING IS:
+
+Time:   O(n * 4α)   ~ O(n)
+Space:  O(n)
+
+---------------------SUMMARY IN ONE PLACE-------------------------
+-INTRO-
+Disjoint Set Union (DSU), also known as Union-Find, is a data structure that efficiently keeps track of a partition of a
+set into disjoint subsets. This data structure is particularly useful in scenarios where you need to perform operations
+like merging two sets or determining whether two elements belong to the same set or not in almost "constant time".
+"Identity of a set is usually an element of the set that acts as a representative for it".
+
+It provides two main operations: union and find.
+
+=Operations=
+1. MakeSet: This operation initializes a new set with a single element. Each element is initially its own representative
+in its own subset.
+2. Union (Merge): Combines two sets into a single set. This involves finding the leaders of the two sets and
+making one of them the leader of the other. 
+3. Find (Find Set Representative): Determines the representative (leader)/root of the set to which a particular element
+belongs. This operation is often used to check whether two elements are in the same set.
+The leader/representative is the root of the DSU tree. And a representative of a root/repres. is representative itself.
+
+=Applications=
+-> Kruskal's algorithm for finding the minimum spanning tree of a graph.
+-> Finding cycle in an undirected graph
+-> Dynamic connectivity problems in computer science.
+DSU is a fundamental data structure with various applications, especially in graph algorithms and problems that
+involve maintaining and merging sets.
+
+-OPTIMISATION-
+In a NON OPTIMISED (without path compression and union operation optimisation like unionByRank and unionBySize) implementation of DSU our goal of performing find and union operations in almost constant time will not be achieved bcz find operation will take O(logn).
+
+So, how we can optimise the DSU data structure?? There are two ways :
+1. Path compression  (Optimises find operation)
+2. Union by rank and Union by size  (helps in balancing tree structure)
+ 
+Lets discuss both one by one:
+
+1. Path Compression:
+In the Union-Find data structure, path compression involves updating the pointers along the way to make future searches
+faster. So, when you try to find the representative of an element, the path compression optimizes the path compression
+involves "UPDATING THE PARENT POINTERS ALONG THE PATH TO POINT DIRECTLY TO THE ROOT". This way, subsequent searches take
+a shorter path, making the overall operations more efficient.
+The idea is to flatten the structure of the tree formed by the sets, ensuring that subsequent find operations are
+more efficient.
+E.g:
+Let's say we have a tree like this :
+1
+ \
+  2
+   \
+    3
+     \
+      4
+       \ 
+        5
+So in this case : if i want to find parent of 5 then i have to travel all along from 5 to its root which will take O(logn).
+But after path compression the tree will look like this:
+         1 
+      / | | \
+     2  3 4  5
+     Now if i want root of 5 ,4 , 3 or 2 in find() then it will just take constant time.
+
+2.1 Union by rank :
+In Union by rank, each set (or tree) is associated with a rank or depth.
+ Here we find out union according to the rank of each subsets.
+ -> When performing a union operation, the tree/set with the smaller rank is merged into the tree/set with the larger
+    rank. And if rank is same for both the sets you can merge according to your choice.
+ -> The rank of a set is initially set to 0, and it is updated during the union operation based on the current ranks of
+    the sets being merged.
+ -> Union by rank helps to keep the tree structure balanced, preventing the tree from becoming too deep.
+
+WHY COMBINING/ATTACHING SMALLER RANK ROOT TO LARGER RANK ROOT?
+When you attach the smaller rank tree to the larger rank tree, you are ensuring that THE OVERALL DEPTH OF THE
+RESULTING TREE DOES NOT INCREASE SIGNIFICANTLY. This helps in maintaining balance and preventing the tree from
+becoming too deep. 
+But union by rank does not guarantee prevention of tree from being skewed as we lost info about the height
+(as height got distorted after the path compression) of the tree.
+
+SO, NOW THE QUESTION IS CAN WE ACTUALLY MANAGE/BALANCE THE HEIGHT OF TREE ???
+ANSWER IS YESS!! WE CAN, WITH THE HELP OF "UNION BY SIZE"
+Union by size is another strategy to balance the size of the trees, indirectly helping in managing the height.
+2.2 Union by size:
+In union by size each element initially belongs to its own set, and the size of each set is initialized to 1.
+The size of a set is stored in its root node, indicating the number of elements in the set.
+When performing a union operation, the algorithm compares the sizes of the trees representing the sets.
+The root of the smaller-sized tree is made a child of the root of the larger-sized tree.
+This strategy minimizes the resulting tree size and prevents the formation of skewed trees(left or right).
+Balancing Tree Heights: By choosing the smaller-sized tree to merge under the larger-sized tree, the strategy helps
+"balance the heights of the trees"(union by size only prevents tree from becoming too deep) in the DSU structure.
+
+TIME COMPLEXITY:
+NOTE: You can you either union by rank or union by size bcz time compl. is same for both. I find UnionBySize more intuitive.
+Time complexity of find & union operatins in optimised dsu i.e, with Path Compression and Union by rank/ Union by Size is :
+O(4α) which is very close to O(1).
+NOTE: Path compression is must bcz ultimately union operation itself depends on find() operation. If you only optimise union operation then time compl. will remain O(logn).
