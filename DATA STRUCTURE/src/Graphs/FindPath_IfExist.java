@@ -1,5 +1,13 @@
 package Graphs;
 
+
+// https://leetcode.com/problems/find-if-path-exists-in-graph/
+
+// NOTE: IN THIS QUESTION WITHOUT CLASS GRAPH WILL BE IMPLEMENTED THAT IS ALL CONNECTED NODES  FOR A PARTICULAR NODE
+// IN GRAPH ARE DIRECTLY STORED IN INTEGER VALUES 
+// EG: LETS SAY WE HAVE A NODE 1 AND ALL NODES CONNECTED TO IT ARE {3,4,6} THEN IN ARRAYLIST
+// AT IDX 1 WE'LL DIRECTLY STORE VALUES 2,4,6 DONE.
+
 import java.util.ArrayList;
 
 public class FindPath_IfExist {
@@ -55,21 +63,6 @@ public class FindPath_IfExist {
         }
         boolean[] visited = new boolean[n];
         return dfs(graph, visited, source, destination); // O(V+E)
-    }
-
-
-
-
-    public static void main(String[] args) {
-        int n = 5;
-        int[][] edges = {{0, 1}, {0, 2}, {2, 3}, {2, 4}};
-        int start = 0;
-        int end = 4;
-
-        boolean isValidPath = validPath(n, edges, start, end);
-        System.out.println(isValidPath);
-    }
-}
 
 /*
  * graph[edges[i][0]].add(edges[i][1]); // u -> v
@@ -95,4 +88,24 @@ public class FindPath_IfExist {
  * Index 2: [0, 3, 4]
  * Index 3: [2]
  * Index 4: [2]
- */
+ */ 
+
+}
+
+
+
+
+    public static void main(String[] args) {
+        int n = 5;
+        int[][] edges = {{0, 1}, {0, 2}, {2, 3}, {2, 4}};
+        int start = 0;
+        int end = 4;
+
+        boolean isValidPath = validPath(n, edges, start, end);
+        System.out.println(isValidPath);
+    }
+}
+
+
+
+// SEE APPROACH 2 FOR THIS IN FindPath_IfExist2.java

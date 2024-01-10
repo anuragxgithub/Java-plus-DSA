@@ -77,7 +77,30 @@ public class BFS_Graph {
                 }
             }
         }
+    }
 
+    // THIS IS JUST A SLIGHT VARIATION OF THE ABOVE BFS IMPLEMENTATION "THIS ONE IS BETTER THAN THE ABOVE" ONE BCZ IT ELIMINATES ALREADY VISITED
+    // VERTICES TO GET ADDED IN THE QUEUE (as it first checks whether neighbor is visited or not then adding it) "USE THIS ONE"
+    public static void bfs2(ArrayList<Edge> graph[], boolean[] visited, int source) {
+        // create a queue
+        Queue<Integer> q = new LinkedList<>();
+        q.add(source);
+        visited[source] = true;
+
+        while(!q.isEmpty()) {
+            int current = q.poll();
+            
+            System.out.print(current + " ");
+
+            // add all the adjacent vertices of the current vertex to the queue
+            for(int i = 0; i < graph[current].size(); i++) {
+                int neighbor = graph[current].get(i).dest;
+                if(!visited[neighbor]) {            // check if the neighbor is visited or not if not visited then visit it and add it to the queue
+                    visited[neighbor] = true;
+                    q.add(neighbor);
+                }
+            }
+        }
     }
 
 
@@ -96,6 +119,9 @@ public class BFS_Graph {
         ArrayList<Edge>[] graph = new ArrayList[V];
         createGraph(graph);
         bfs(graph);
+
+        System.out.println();
+        bfs2(graph, new boolean[V], 0);
 
     }
     

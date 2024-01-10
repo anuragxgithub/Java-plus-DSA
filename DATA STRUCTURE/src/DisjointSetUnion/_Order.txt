@@ -1,0 +1,4 @@
+Main
+UnionByRank
+PathCompression     Important One.
+UnionBySize

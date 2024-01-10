@@ -2,7 +2,7 @@
  * In this file we will discuss How to detect cycles in Undirected Graph.
  * 
  * NOTE: Cycles in undirected graph can be detected using three appraoches:
- * 1. DFS
+ * 1. DFS   (Main one)
  * 2. BFS
  * 3. DSU (DISJOINT SET UNION)
  * 
@@ -44,7 +44,7 @@ public class CyclesInGraph1 {
         // 1 vertex
         graph[1].add(new Edge(1, 0, 1));
         graph[1].add(new Edge(1, 2, 1));
-        // graph[1].add(new Edge(1, 4, 1));
+        graph[1].add(new Edge(1, 4, 1));
 
         // 2 vertex
         graph[2].add(new Edge(2, 1, 1));
@@ -55,7 +55,7 @@ public class CyclesInGraph1 {
 
         // 4 vertex
         graph[4].add(new Edge(4, 0, 1));
-        // graph[4].add(new Edge(4, 1, 1));
+        graph[4].add(new Edge(4, 1, 1));
         graph[4].add(new Edge(4, 5, 1));
 
         // 5 vertex
@@ -63,7 +63,7 @@ public class CyclesInGraph1 {
 
 }
 
-    // METHOD 1- CYCLE DETECTION USING DFS
+    // METHOD 1- CYCLE DETECTION USING DFS      O(V+E)
     public static boolean isCyclicUsingDFS(ArrayList<Edge>[] graph, boolean[] visited, int current, int parent)  {
         visited[current] = true;
         
@@ -84,7 +84,7 @@ public class CyclesInGraph1 {
         return false;
     }
 
-    // METHOD 2- CYCLE DETECTION USING BFS
+    // METHOD 2- CYCLE DETECTION USING BFS          O(V+E)
     public static boolean isCyclicUsingBFS(ArrayList<Edge>[] graph, int source) {    
         // create a queue
         Queue<Integer> q = new LinkedList<>();
@@ -119,7 +119,7 @@ public class CyclesInGraph1 {
     }
 
     // METHOD 3- CYCLE DETECTION USING DSU (DISJOINT SET UNION) If you don't know about dsu first learn it(useful concept)
-    /// https://youtu.be/Kptz-NVA2RE?si=HOChBSakiSLMGizi
+    // We can optimise this.
     public static boolean isCyclicUsingDSU(ArrayList<Edge>[] graph) {
         // Create a parent array
         int[] parent = new int[graph.length];
@@ -130,38 +130,41 @@ public class CyclesInGraph1 {
         }
 
         // Iterate through all edges of graph, find subset
-        // of both vertices of every edge, if both subsets
-        // are same, then there is cycle in graph.
+        // of both vertices of every edge, if for any edge vertex1 and vertex2 has same root/representative
+        // then there is cycle in graph.
         for(int i = 0; i < graph.length; i++) {         // it would be better to use for each loop
             ArrayList<Edge> al = graph[i];
-            for(int j = 0; j < al.size(); j++) {      
+            for(int j = 0; j < al.size(); j++) {
+                if(i > 0 && j == 0) {               // why this condition bcz we need to visit one edge only once (other wise always true)
+                    continue;
+                }     
                 Edge e = al.get(j);
-                int rootSource = find(parent, e.src);
-                int rootDest = find(parent, e.dest);
+                int rootV1 = find(parent, e.src);
+                int rootV2 = find(parent, e.dest);
 
-                if(rootSource == rootDest) {
+                if(rootV1 == rootV2) {      // that means cycle exist
                     return true;
                 }
 
-                union(rootSource, rootDest, parent);
+                union(e.src, e.dest, parent);
             }
         }
         return false;
     }
-
+    // finds the ultimate parent of i (root/representative)
     public static int find(int[] parent, int i) {
-        if (parent[i] == i) {
+        if (parent[i] == i) {   
             return i;
         }        
-        return parent[i] = find(parent, parent[i]);  
+        return find(parent, parent[i]);   // Traverse up the tree until finding the root
     }
 
     public static void union(int x, int y, int[] parent) {
-        int rootX = find(parent, x);
-        int rootY = find(parent, y);
+        int rootV1 = find(parent, x);       
+        int rootV2 = find(parent, y);
 
-        if(rootX != rootY) {
-            parent[rootX] = rootY;
+        if(rootV1 != rootV2) {        // if both vertices do not belong to the same set(i.e, root of v1 and v2 is not same) so union it(make new set with the new values included)
+            parent[rootV2] = rootV1;  // connect/combine the two different sets by making v1's root as parent of v2's root or vice versa (visualise the tree)
         }
     }
 
@@ -197,5 +200,6 @@ public class CyclesInGraph1 {
 
 
     }
-    
 }
+
+// DFS one is enough but know every method.

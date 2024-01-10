@@ -1,0 +1,9 @@
+WHILE CALCULATING TIME COMPLEXITY HERE WE DIDN'T CONSIDER TIME OF FOR LOOP WHICH TAKES O(n).
+I only discussed about the find and union operation complexity and time complexity of union ultimately depends upon
+find method operation.
+
+TIME AND SPACE COMPLEXITY OF 
+DISJOINT SET DATA STRUCTURE WITH (UNION BY RANK OR UNION BY SIZE) WITH PATH COMPRESSION INCLUDING EVERYTHING IS:
+
+Time:   O(n * 4α)   ~ O(n)
+Space:  O(n)
