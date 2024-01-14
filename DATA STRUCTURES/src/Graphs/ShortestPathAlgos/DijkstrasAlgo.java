@@ -19,11 +19,13 @@ OTHER VERTICES" in a weighted graph. It starts from the source vertex and iterat
 smallest known distance, updating the distances to its neighbors. The process continues until the shortest paths to
 all vertices are determined. The algorithm maintains a priority queue to efficiently select the next vertex to explore
 based on the current known distances.
+"
 
 --> STPES/APPROACH <--
 
 INITIALIZATION:
--> Create a priority queue (min heap) to store vertices and their distances from the source.
+-> Create a priority queue (min heap) to "store vertices and their distances" from the source. Because we'll remove that neighbor first from pq which
+has shorter path that's why pq will be more suitable.
 -> Initialize an array to store the minimum distance from the source to each vertex.
 -> Mark all vertices as unvisited.
 
@@ -33,16 +35,18 @@ SET INITIAL DISTANCE:
 MAIN LOOP:
 -> While the priority queue is not empty:
     -Extract the vertex with the minimum distance from the priority queue.
-    -Mark the vertex as visited.
-    -For each unvisited neighbor of the current vertex:
-        -Calculate the tentative distance from the source to the neighbor through the current vertex.
-        -If the tentative distance is smaller than the current known distance to the neighbor:
+    -For each current extracted vertex if it is not visited do the follow:
+        1.Mark the vertex as visited.   
+        2.Calculate the tentative distance from the source to the neighbor through the current vertex.
+        3.If the tentative distance is smaller than the current known distance to the neighbor:
             -Update the distance of the neighbor.
             -Add the neighbor to the priority queue with the updated distance.
 
 COMPLETION:
 -> Once the priority queue is empty, the algorithm is complete.
--> The distance array now contains the shortest distances from the source to all other vertices in the graph. 
+-> The distance array now contains the shortest distances from the source to all other vertices in the graph.
+
+Easy Peasy... only some slight logical change in bfs especially relaxation thing.
 
 */
 
@@ -109,7 +113,7 @@ public class DijkstrasAlgo {
                         // add the neighbor to the pq
                         pq.add(new Pair(v, dist[v]));      // always add after updating the distance(after relaxation)
                     }
-                }
+                }   // remember while dry running that between 2 or more nodes the node with the least distance is selected first
             }
         }
         for(int i = 0; i < dist.length; i++) {
@@ -135,6 +139,8 @@ public class DijkstrasAlgo {
 
         graph[4].add(new Edge(4, 3, 2));
         graph[4].add(new Edge(4, 5, 5));
+
+        // no outgoing edge from vertex 5
     }
     
 
