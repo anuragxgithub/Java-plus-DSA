@@ -136,3 +136,13 @@ public class TopologicalSorting {
     }
 
 }
+/*
+ * One specific algorithm that combines topological sorting with finding shortest paths is the "Shortest Path in a
+ * Directed Acyclic Graph" algorithm. This algorithm works on a DAG and computes the shortest paths from a single 
+ * source vertex to all other vertices. It achieves this by topologically sorting the vertices and then relaxing the
+ * edges in the topological order. The algorithm is more efficient than algorithms like Dijkstra's or Bellman-Ford for
+ * acyclic graphs. 
+ * So, while topological sorting itself is not a shortest path finding algorithm, it can be a key component in
+ * algorithms designed for finding shortest paths in certain scenarios, particularly when dealing with directed acyclic
+ * graphs.
+ */

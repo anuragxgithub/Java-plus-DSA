@@ -151,7 +151,7 @@ public class DijkstrasAlgo {
          *        /    |          |  \
          *       0     |(1)    (2)|   -> 5
          *        \    |          |  /
-         *     (4) \   ↓          ↓ / (5)
+         *     (4) \   ↓          | / (5)
          *          -> 2 -------> 4
          *                  (3)
          */
@@ -165,6 +165,13 @@ public class DijkstrasAlgo {
     }
 }
 /*
+In Dijkstra's algorithm, choosing the shortest path first is essential to ensure the algorithm finds the shortest paths
+from a source node to all other nodes in a weighted graph. By always selecting the shortest path at each step,
+the "algorithm guarantees" that the distances assigned to each node are optimal.
+The rationale behind this approach is to progressively explore and update the shortest known distances to reach each
+node. By prioritizing the shortest paths, Dijkstra's algorithm efficiently converges to the optimal solution,
+providing the shortest paths in non-negative weighted graphs.
+
  * In Dijkstra's algorithm, the source node is used as the starting point to find the shortest paths to all other nodes in the graph. If the source
  * node is not connected to any other nodes (i.e., it has no outgoing edges), it means that there are no valid paths from the source node to any
  * other nodes in the graph.
