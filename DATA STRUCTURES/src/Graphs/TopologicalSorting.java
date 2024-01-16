@@ -9,8 +9,8 @@ EG:
   a --> b
    \    |
     \   |
-     \ ⬇️ 
-     ~> c ----> d
+     \  ↓ 
+     -> c ----> d
 
      u  |  v
      a  -> b
@@ -30,14 +30,14 @@ EG:
 
     The graph would look like this:
          1
-        ⬇️
+         ↓
          2               for os there must be a laptop
        /   \
-      ⬇️  ⬇️ 
+      ↓     ↓  
       3     4            for action 3 and 4 os should be installed first (insatlling java don't need code editor to be installed)
       \     /
        \   /
-        ⬇️
+         ↓
          5              for writing code code editor and java should be present first
 
          Look a DAG is formed showing dependency.
@@ -118,7 +118,7 @@ public class TopologicalSorting {
             5 -----> 0 <------ 4
             |                  | 
             |                  | 
-           ⬇️                 ⬇️  
+            ↓                  ↓  
             2 ------> 3 -----> 1
 
             NOTE: POSSIBLE ANWERS ARE:

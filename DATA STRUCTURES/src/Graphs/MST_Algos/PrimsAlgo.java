@@ -3,6 +3,16 @@
  * Use the set appraoch of understanding/teaching the Prim's Algorithm.
  * 
  * ----- Prims' Algorithm -----
+ * Prim's algorithm is a greedy algorithm used for finding the minimum spanning tree of a connected and undirected graph.
+ * The algorithm starts with an arbitrary node and grows the spanning tree by adding the shortest edge that connects a
+ * vertex in the tree to a vertex outside the tree. This process continues until all vertices are included in the
+ * spanning tree.
+ 
+ Properties of MST:
+ - all nodes are included
+ - no cycle (thats why it is called as tree)
+ - edge weight will be minimum
+ - graph should be undirected only then we can find mst.
  * 
  */
 

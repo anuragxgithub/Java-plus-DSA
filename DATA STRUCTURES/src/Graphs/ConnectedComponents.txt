@@ -1,0 +1,55 @@
+
+
+In the context of graphs in data structures and algorithms (DSA), connected components refer to subgraphs
+within a larger graph where each vertex is connected to every other vertex in the same subgraph, either
+directly or indirectly.
+
+Here's a more detailed explanation:
+
+CONNECTED COMPONENT DEFINITION:
+A connected component in an undirected graph is a maximal set of vertices such that there is a path between
+every pair of vertices in the set.
+In a directed graph, the concept is similar, but it involves directed paths.
+
+FINDING CONNECTED COMPONENTS:
+When working with graphs, it's often useful to find and identify connected components.
+One common algorithm for finding connected components is Depth-First Search (DFS) or Breadth-First Search (BFS).
+
+DFS FOR CONNECTED COMPONENTS:
+In DFS, you start from an arbitrary vertex and explore as far as possible along each branch before backtracking.
+During this exploration, you mark visited vertices.
+When the DFS process completes for a connected component, you start a new DFS from an unvisited vertex,
+marking a new connected component.
+
+APPLICATION:
+Connected components can be important in various applications, such as network analysis, image processing,
+and social network analysis.
+They help in understanding the structure and connectivity of the graph.
+
+EXAMPLE:
+Consider an undirected graph with multiple disconnected parts. Each disconnected part is a connected component.
+For instance, if you have a graph with three separate subgraphs (isolated from each other), you have three 
+connected components.
+
+
+In summary, connected components are sets of vertices in a graph where there is a path between every pair of
+vertices within the set. Algorithms like DFS or BFS are commonly used to identify and analyze connected
+components in a graph.
+
+
+
+    eg: 
+
+    1 -- 4       5            8
+    |    |      / \           |      10  
+    2 -- 3     6---7          9
+
+    These four graph are not seperate they belong to a single graph for that graph these are connectec components.
+    Thats why in any traversal algos we maintain a visited[] array to check whether all nodes/vertex of a graph
+    is visited or not.
+
+
+
+Yes, the concept of strongly connected components specifically applies to directed graphs.
+In undirected graphs, every component is, by definition, strongly connected because there are no directed
+edges with a specific direction.
