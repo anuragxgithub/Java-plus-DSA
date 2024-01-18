@@ -1,29 +1,13 @@
-/*
- * Note: You should be able to tell the the approach or dry the this algo because "Interviewer can ask this".
- * Use the set appraoch of understanding/teaching the Prim's Algorithm.
- * 
- * ----- Prims' Algorithm -----
- * Prim's algorithm is a greedy algorithm used for finding the minimum spanning tree of a connected and undirected graph.
- * The algorithm starts with an arbitrary node and grows the spanning tree by adding the shortest edge that connects a
- * vertex in the tree to a vertex outside the tree. This process continues until all vertices are included in the
- * spanning tree.
- 
- Properties of MST:
- - all nodes are included
- - no cycle (thats why it is called as tree)
- - edge weight will be minimum
- - graph should be undirected only then we can find mst.
 
- BFS based.
- * 
- */
+
+// here we'll see to store the mst edges everything else wil remain same
 
 package Graphs.MST_Algos;
 
 import java.util.ArrayList;
 import java.util.PriorityQueue;
 
-public class PrimsAlgo {
+public class PrimsAlgo2 {
     static class Edge {
         int src;
         int dest;
@@ -59,10 +43,12 @@ public class PrimsAlgo {
     static class Pair implements Comparable<Pair> {
         int node;
         int cost;
+        int parent;
 
-        public Pair(int n, int c) {
+        public Pair(int n, int c, int p) {
             this.node = n;
             this.cost = c;
+            this.parent = p;
         }
 
         @Override
@@ -77,26 +63,35 @@ public class PrimsAlgo {
         // since we need minimum cost edge first so pq (same as dijkstras algo)
         PriorityQueue<Pair> pq = new PriorityQueue<>();     // u can visualise it as non-mst set
         boolean[] visited = new boolean[graph.length];      // u can visualise it as mst set
-        pq.add(new Pair(0, 0));  // initially choose any src node(as we can reach every other node from it) and add it to pq
+        pq.add(new Pair(0, 0, -1));  // initially choose any src node(as we can reach every other node from it) and add it to pq
         int mstCost = 0;
-        //H.W ArrayList<Edge> store the actual edges instead of cost
+        ArrayList<Edge> mstEdges = new ArrayList<>();
+
         while(!pq.isEmpty()) {
             Pair curr = pq.remove();
     
             if(!visited[curr.node]) {
-                visited[curr.node] = true;          // here edge is added to mst
+                visited[curr.node] = true;      // here edge is added to mst
+
                 mstCost += curr.cost;
+                if(curr.node != 0) mstEdges.add(new Edge(curr.parent, curr.node, curr.cost));
 
                 for(int i = 0; i < graph[curr.node].size(); i++) {
                     Edge e = graph[curr.node].get(i);
+
                     // first check the neighbor is visited or not then add it to the pq
                     if(!visited[e.dest]) {
-                        pq.add(new Pair(e.dest, e.wt));
+                        pq.add(new Pair(e.dest, e.wt, curr.node));  // curr.node will be parent of e.dest
+
                     }
                 }
             }
         }
-        System.out.println("Minimum cost of MST is : " + mstCost);
+        System.out.println("MST cost is : " + mstCost);
+        System.out.println("MST edges are :");
+        for(Edge e : mstEdges) {
+            System.out.println(e.src + "--" + e.dest + " : " + e.wt);
+        }
     }
 
     public static void main(String[] args) {
@@ -120,4 +115,5 @@ public class PrimsAlgo {
     }
     
 }
-// h.w. in PrimsAlgo2.java
+
+// Remember this. Got this logic after decent brainstorming.

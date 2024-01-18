@@ -44,7 +44,8 @@ public class FindPath_IfExist {
             graph[edges[i][1]].add(edges[i][0]); // v -> u
             // Note : given edges[i].length == 2
            }
-         */
+        */
+        @SuppressWarnings("unchecked")
         ArrayList<Integer>[] graph = new ArrayList[n];
         // Initialise arraylist to each array idx
         for(int i = 0; i < n; i++) {

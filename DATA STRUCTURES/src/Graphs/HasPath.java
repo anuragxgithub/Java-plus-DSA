@@ -78,7 +78,8 @@ public class HasPath {
 
               This is unweighted graph but we will still take weight of each node as 1 to follow standard. We can skip it too.
         */
-        int V = 7; 
+        int V = 7;
+        @SuppressWarnings("unchecked")
         ArrayList<Edge>[] graph = new ArrayList[V];
         createGraph(graph);
 

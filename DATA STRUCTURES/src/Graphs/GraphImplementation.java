@@ -40,6 +40,7 @@ public class GraphImplementation {
         // The size of our array will be the total num. of Vertices
         int V = 5;
         // int[] arr = new int[];
+        @SuppressWarnings("unchecked")
         ArrayList<Edge>[] graph = new ArrayList[V];  
         // graph will store values of type ArrayList. And ArrayList is of type Edge(i.e, at each idx of ArrayList value of type edge is stored).
         // Very Imp. thing : Now at each idx of our array of arraylist "null" is stored

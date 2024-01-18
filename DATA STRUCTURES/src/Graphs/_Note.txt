@@ -13,3 +13,5 @@ x. ConnectedComponents.txt
 10. Shortest Path algo
 11. MST_Algos
 12. Questions
+13. Kosarajus's Algo
+14. Tarjan's Algo - bridges in graph.

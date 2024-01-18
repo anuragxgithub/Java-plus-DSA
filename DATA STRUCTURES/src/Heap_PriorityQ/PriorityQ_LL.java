@@ -19,7 +19,6 @@ import java.util.ArrayList;
 public class PriorityQ_LL<T extends Comparable<T>> {
     private ListNode<T> head;       // data member or field same thing
     
-
     class ListNode <T extends Comparable<T>> {  // you can use any other letter(eg E) in type parameter of this class instead of T bcz it is overshadowing the T of class outer class, since it is a nested class that is why it is overshadowing if I created the same node class outside the PriorityQ_LL class it won't show this warning.
         private T value;                   // data member
         private ListNode<T> next;       // data member

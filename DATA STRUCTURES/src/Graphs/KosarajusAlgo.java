@@ -79,6 +79,7 @@ public class KosarajusAlgo {
         }
 
         // STEP 2 (transpose the graph)    O(V+E)
+        @SuppressWarnings("unchecked")
         ArrayList<Edge>[] transpose = new ArrayList[V];     // reverse the direction of edges to create transpose of a graph
         for(int i = 0; i < V; i++) {
             transpose[i] = new ArrayList<>();  // initialising
@@ -116,6 +117,7 @@ public class KosarajusAlgo {
         */
 
         int V = 5;
+        @SuppressWarnings("unchecked")
         ArrayList<Edge>[] graph = new ArrayList[V];
         createGraph(graph, V);
 
