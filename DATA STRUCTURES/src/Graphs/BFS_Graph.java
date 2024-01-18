@@ -116,6 +116,7 @@ public class BFS_Graph {
         */
 
         int V = 7;
+        @SuppressWarnings("unchecked")
         ArrayList<Edge>[] graph = new ArrayList[V];
         createGraph(graph);
         bfs(graph);

@@ -182,6 +182,7 @@ public class CyclesInGraph1 {
         */
 
         int V = 6;
+        @SuppressWarnings("unchecked")
         ArrayList<Edge>[] graph = new ArrayList[V];
         createGraph(graph);
 

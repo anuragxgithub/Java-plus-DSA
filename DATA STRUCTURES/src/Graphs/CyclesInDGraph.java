@@ -97,6 +97,7 @@ public class CyclesInDGraph {
         
 
         int V = 5;
+        @SuppressWarnings("unchecked")
         ArrayList<Edge>[] graph = new ArrayList[V];
         createGraph(graph);
 
