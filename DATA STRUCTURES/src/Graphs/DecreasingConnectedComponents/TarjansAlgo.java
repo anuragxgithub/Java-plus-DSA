@@ -2,7 +2,7 @@
 /* 
 BRIDGES IN GRAPH:
 Bridge is an "edge" whose deletion increases the graph's number of connected components.
- 
+
 ----TARJAN'S ALGORITHM----
 Tarjan's algo is more famous for find the strongly connected components.
  
@@ -27,8 +27,15 @@ To implement this algorithm, we need the following "data structures" –
 
 visited[] = to keep track of the visited vertices to implement DFS
 disc[] = to keep track when for the first time that particular vertex is reached
-low[] = to keep track of the lowest possible "time" by which we can reach that vertex ‘other than parent’ so that if
-         edge from parent is removed can the particular node can be reached other than parent.
+lowdt[] or low[] : is the lowest discovery time of a node. Lowest Discovery time of a node is the lowest discovery time among all the nodes
+                   connected to it including itself but not the parent node. 
+                   Eg: lowdt of v is the lowest lowdt among all the nodes connected to it directly or indirectly 
+                   inclding itself but excluding its parent which is u.                                        
+                             y  
+                            /  
+                     u --- v -- x
+                            \
+                             z
 
 We will traverse the graph "using DFS" traversslight modial but with fications i.e. while traversing we will keep
 track of the "parent node" by which the particular node is reached because we will update the 
@@ -50,18 +57,18 @@ can’t reach ‘v’ without ‘u’ so the edge   u -> v is a bridge.
 edge 0--3 then graph will be in 2 connected components SO THE CATCH IS DISCOVERY TIME OF ALL THE NODES AT
 RIGHT CONNECTED COMPONENT WILL BE GREATER THAN THE DISCOVERY TIME OF 0. see below:
 
-    x               y  y
-    \             /   |
-        u -------- v ---
-    / |           \
-    x  x            y
+     x            y  y
+     \           /   |
+      u ------- v ---
+    / |          \
+   x  x           y
     So simple, just look at the graph discovery time of u will always be greater than the dt of v and its
     neighbors because a single path exist b/w u and v so we must have to first travel u and then v.
     That is how we are gonna find the bridge using tarjan's algo.
 
 */
 
-package Graphs;
+package Graphs.DecreasingConnectedComponents;
 
 import java.util.ArrayList;
 
@@ -119,7 +126,7 @@ public class TarjansAlgo {
             | /       |
             2         4
 
-            Here there is 2 bridges in graph and that are edge: (0 to 3) & (3 to 4) bcz undirected
+            Here there is 2 bridges in graph and that are edge: (0 to 3) & (3 to 4).
             don'v forget to updat V in main
         */
 
@@ -180,8 +187,6 @@ public class TarjansAlgo {
     }
 
     public static void main(String[] args) {
-        
-
         int V = 6;
         @SuppressWarnings("unchecked")
         ArrayList<Edge>[] graph = new ArrayList[V];
@@ -193,7 +198,7 @@ public class TarjansAlgo {
 }
 /*
     ⭐⭐ NOTE: I observed that no edge of a cycle can be a bridge. And cycles are the only case where 'lowest discovery time' low[] value is
-    start decreasing making this condition (dt[curr] < low[neighbor]) of bridge detection false for each edge in cycle.
+    start decreasing making this condition (dt[curr] < low[neighbor]) of bridge detection false for each "edge" in cycle.
 
     And any edge which is not part of any cycle will be a bridge. ⭐⭐
 

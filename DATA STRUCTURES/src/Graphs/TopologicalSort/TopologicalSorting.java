@@ -54,7 +54,7 @@ where other nodes are originating) so in this way the non dependent nodes will b
 be printed. (IN SHORT : "Take one node store its dependents first and then add it do this for each node".)
 */
 
-package Graphs;
+package Graphs.TopologicalSort;
 
 import java.util.ArrayList;
 import java.util.Stack;
@@ -119,9 +119,9 @@ public class TopologicalSorting {
             |                  | 
             |                  | 
             ↓                  ↓  
-            2 ------> 3 -----> 1
+            2 ------> 3 -----> 1           (2 should come before 3 and 1, 5 & 4 should come before 0 ,2,3 and 1)
 
-            NOTE: POSSIBLE ANWERS ARE:
+            NOTE: POSSIBLE ANSWERS ARE:
             5,4,3,2,1,0
             4,5,3,2,1,0
             5,4,0,2,3,1  ... and others too if possible

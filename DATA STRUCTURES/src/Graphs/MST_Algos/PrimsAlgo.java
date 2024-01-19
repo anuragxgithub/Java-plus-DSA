@@ -11,6 +11,7 @@
  Properties of MST:
  - all nodes are included
  - no cycle (thats why it is called as tree)
+ - v-1 edges total
  - edge weight will be minimum
  - graph should be undirected only then we can find mst.
 
