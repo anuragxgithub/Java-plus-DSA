@@ -123,3 +123,7 @@ public class KahnsAlgo {
 
     }
 }
+/*
+time complexity is O(V + E)
+space complexity is O(V + E).
+*/
