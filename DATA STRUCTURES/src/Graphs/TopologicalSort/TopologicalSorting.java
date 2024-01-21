@@ -1,4 +1,5 @@
 /*
+IT IS DFS BASED KAHN'S ALGO IS BFS BASED
 -----TOPOLOGICAL SORTING-----
 Topological sorting is used only for DIRECTED ACYCLIC GRAPHS (DAGs). And not for (non DAGs)
 (DAGs are grpahs which are directed and not cyclic)

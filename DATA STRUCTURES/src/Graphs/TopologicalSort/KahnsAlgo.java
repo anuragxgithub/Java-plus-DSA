@@ -2,6 +2,9 @@
 "Toplogical sort is a linear order of vertices such that every directed edge u -> v, the vertex u comes before v
 in order."
 - Toplogical sort is only calculated for DAGs(Directed Acyclic Graph)
+  Kahn's Algo will fail if you apply it on directed cyclic graph bcz nodes which are part of cycle will never have
+  indegree 0 after decrementing thing and hence will not be added to queue. Remember, it can be useful when solving
+  prblm.⭐
 ---- TOPOLOGICAL SORT USING BFS -- "KAHN'S ALGORITHM" ----
 
 Previoulsy we performed topological sort using dfs now this is how we can do it using BFS
@@ -102,7 +105,7 @@ public class KahnsAlgo {
 
             for(int i = 0; i < graph[curr].size(); i++) {
                 Edge e = graph[curr].get(i);
-                // decrement the in degree of the current node
+                // decrement the in degree of the neighbor node
                 indeg[e.dest]--;
                 if(indeg[e.dest] == 0) {
                     // if after decrementing neig's indeg value it becomes 0 add it to queue

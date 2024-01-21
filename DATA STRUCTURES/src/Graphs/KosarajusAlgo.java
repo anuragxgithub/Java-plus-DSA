@@ -3,15 +3,33 @@
  * KOSARAJU's ALGORITHM is used to calculate number of Strongly connected Components in Directed Graph Obviously
  * b/z in indirected graph every connected component is strongly connected.
  * 
- * In graph theory, particularly with directed graphs, a strongly connected component is a group of vertices in which there is a directed
- * path from any vertex to any other vertex within the same component. In other words, every vertex in the strongly connected component is
- * reachable from every other vertex in that component through directed edges.
- * It is a 3 steps algo.
- * STEPS-
- * 1. GET NODES IN STACK (TOPOLOGICAL SORT)
- * 2. TRANSPOSE THE GRAPH       "(Reverse the direction of edges transpose is ready)"
- * 3. DO DFS ACCORDING TO STACK NODES(in the order they are stored) ON "TRANSPOSE GRAPH".
- */
+💠 KOSARAJU's Algorithm Explained: Finding Strongly Connected Components 💠
+Kosaraju's Algorithm is a powerful tool for identifying and counting the number of Strongly Connected Components
+(SCCs) in a Directed Graph. In directed graphs, not all connected components are strongly connected, making this
+algorithm particularly valuable.
+Obviously in Undirected Graphs all components are already strongly connected.
+
+💠 Understanding Strongly Connected Components 💠
+In graph theory, a strongly connected component is a "set of vertices" where there exists a directed path from any
+vertex to any other vertex within the same component. Essentially, every vertex in the SCC is reachable from every
+other vertex through directed edges.
+
+💠 The 3-Step Algorithm 💠
+1.Get Nodes in Stack (Topological Sort):
+    Start by performing a topological sort to obtain a stack of nodes. This step ensures that nodes are processed in an 
+    order conducive to identifying strongly connected components.
+2.Transpose the Graph:
+    Reverse the direction of edges in the original graph to create the transpose graph. This step is crucial for the
+    subsequent DFS traversal.
+3. DFS on Transpose Graph According to Stack Nodes:
+    Perform a Depth-First Search (DFS) on the transpose graph using the nodes in the order they are stored in the stack.
+    This traversal helps unveil the strongly connected components.
+
+STEPS-
+1. GET NODES IN STACK (TOPOLOGICAL SORT)
+2. TRANSPOSE THE GRAPH       "(Reverse the direction of edges transpose is ready)"
+3. DO DFS ACCORDING TO STACK NODES(in the order they are stored) ON "TRANSPOSE GRAPH".
+*/
 package Graphs;
 
 import java.util.ArrayList;

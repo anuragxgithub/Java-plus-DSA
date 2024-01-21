@@ -73,8 +73,8 @@ public class BellmanFordAlgo {
                     int u = e.src;
                     int v = e.dest;
 
-                    if(dist[u] != Integer.MAX_VALUE && dist[u] + e.wt < dist[v]) {      // relaxation
-                        dist[v] = dist[u] + e.wt;
+                    if(dist[u] != Integer.MAX_VALUE && dist[u] + e.wt < dist[v]) {      
+                        dist[v] = dist[u] + e.wt;     // relaxation
                     }
                 }
             }

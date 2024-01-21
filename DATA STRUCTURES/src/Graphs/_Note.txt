@@ -19,7 +19,7 @@ x. ConnectedComponents.txt
 14. Decreasing Connnected Components
         - Tarjan's Algo - bridges in graph.
         - Tarjan's Algo - articulation point in graph
-
+15. Bipartite Graph BFS and DFS
 
 
 NOTE: If everything is fine and still ans is not coming correct consider checking the V value in main().
