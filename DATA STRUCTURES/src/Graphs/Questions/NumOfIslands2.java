@@ -31,7 +31,7 @@ public class NumOfIslands2 {
             q.poll();
 
             // traverse the neighbors and mark them as visited if its a land
-            for(int[] direction : new int[][] {{-1, 0}, {0, -1}, {0, 1}, {1, 0}}) { // up , left, right, bottom
+            for(int[] direction : new int[][] {{-1, 0}, {0, -1}, {0, 1}, {1, 0}}) { // up , left, right, bottom  //NOTE: DON'T DO THIS WAY SIMPLY CREATE THE DIRECTION ARRAY AT THE BEGINNING IT PREVENT FROM CREATING AGAIN AND AGAIN
                 int neighborRow = currRow + direction[0];
                 int neighborCol = currCol + direction[1]; 
                 if(neighborCol >= 0 && neighborCol < n && neighborRow >= 0 && neighborRow < m && 

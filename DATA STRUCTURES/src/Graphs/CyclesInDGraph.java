@@ -1,8 +1,8 @@
 /*
  * HERE WE'LL DISCUSS HOW TO DETECT CYLE IN UNDIRECTED GRAPHS
  * 
- * We can't use the parent thing here as we used to do in undirected graph. Becuase in directed graphs you may not be able to visit all the nodes
- * from any node unlike undirected gaphs. Eg:
+ * We can't use the parent thing here as we used to do in undirected graph. Becuase in directed graphs "you may not be
+ * able" to visit all the nodes from any node unlike undirected gaphs. Eg:
  *
 * EG:
 *      0 -----> 1 <----- 2
@@ -10,11 +10,12 @@
 *                     /    \
 *                    !      \
 *                   3 -----> 4
-     So here lets say I visited 1 so its would be 0 and from 2 if I see then 1 is already visited and 2 is not parent of 1 is that mean cycle exist 
+     So here lets say I visited 1 so its parent would be 0 and from 2 if I see then 1 is already visited and 2 is 
+     not parent of 1 is that mean cycle exist 
      there no that's why we don't use parent stuff here in directed graph rather we "leverage call stack".
  * 
  * STEPS:
- * 1) CHECK FOR IF THE NEIGHBOR ALREADY EXIST IN THE CALL STACK AND IS ALREADY VISITED. "THEN CYCLE EXIST"
+ * 1) CHECK FOR IF THE NEIGHBOR ALREADY EXIST IN THE CALL STACK AND IF ALREADY VISITED. "THEN CYCLE EXIST"
  * 2) IF NOT THEN GO AHEAD.
  */
 
@@ -127,3 +128,4 @@ public class CyclesInDGraph {
         }
     }
 }
+// https://www.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1

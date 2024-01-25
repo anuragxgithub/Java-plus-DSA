@@ -7,8 +7,8 @@
 -> We can use either Queue or PriorityQueue in bfs algo of Dijkstra but we'll choose PQ bcz it takes comparatively less time.
 
 Before jumping to the algo know about this simple concept of Relaxation first:
-if(dist[u] + wt < dist[v]) {            dist[u] -> is basically the dist. from src to the currentNode and dist[v] is dist. from src to neighbor node
-    then update the dist[v]             and wt is the wt of that current edge from src to neighbor
+if(dist[u] + wt < dist[v]) {            dist[u] -> is basically the dist. from src to the currentNode and dist[v] is dist. from currNode to neighbor node
+    then update the dist[v]             and wt is the wt of that edge from currentNode to neighbor node.
     dis[v] = dist[u]+wt;    
 }
 this is knwon as relaxation, basically it assigns the new shortest path to that node(neighbor) if the old one is greater.
@@ -163,9 +163,12 @@ public class DijkstrasAlgo {
 
 
          dijkstrasAlgo(graph, 0, V);
+        //  Note : you can ignore the visited array thing in dijkstra
     }
 }
 /*
+https://www.geeksforgeeks.org/problems/implementing-dijkstra-set-1-adjacency-matrix/1?
+
 In Dijkstra's algorithm, choosing the shortest path first is essential to ensure the algorithm finds the shortest paths
 from a source node to all other nodes in a weighted graph. By always selecting the shortest path at each step,
 the "algorithm guarantees" that the distances assigned to each node are optimal.
@@ -179,3 +182,20 @@ providing the shortest paths in non-negative weighted graphs.
  * In such cases, Dijkstra's algorithm will still run, but the resulting distances for all other nodes (except the source) will remain at their
  * initial values (typically set to infinity). This reflects the fact that there is no valid path from the source node to those unreachable nodes.
  */
+
+/*
+ * NOTE: WE CAN ALSO USE QUEUE INSTEAD OF PQ IT WILL ALSO GIVE CORRECT ANS. BUT Q IS NOT PREFERRED BCZ 
+ * WHEN WE USE Q IT DON'T CARE ABOUT THE SHORTEST PATH FIRST WITH WILL GO SEQUENTIALLY DUE TO WHICH IT CAN
+ * ADD UNNECESSARY PAIR IN Q. BUT IF WE USE PRIORITY Q WE ARE BEING GREEDY AND AT EACH POINT WE ARE PICKING THE
+ * SHORTEST PATH WHICH REDUCES THE ADDITION OF NON OPTIMAL PAIR IN QUEUE. HENCE SAVING US SOME TIME.
+ * 
+ *    EG:
+ *       0
+ *  (4)/   \(1)      Here if we use q it will add pairs {1,4}, {2, 1}, {3,7}, {3,2}
+ *    /     \        But if we use pq pairs added will be : {2,1} & {3,2} other will not be added bcz get rejected while relaxation
+ *   1       2 
+ *    \     /
+ *  (7)\   / (2)
+ *       3 
+ *         \....
+ */  

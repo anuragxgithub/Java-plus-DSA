@@ -15,7 +15,7 @@
  * STEPS / APPROACH
  * 1. Start with initialising the distance in dist arry for each vertex as infinity except the src.
  * 2. Now, just run a loop to visit all the edges and for all the edges peform relaxation(updating dist. estimates).
- * Do this until the shortest path get determined.
+ *    Do this until the shortest path get determined.
  * 3. And it will be determined if we do relaxation for each vertex V-1 times.
  * 
  */
@@ -66,7 +66,7 @@ public class BellmanFordAlgo {
         }
 
         for(int k = 0; k < V-1; k++) {    //O(V)
-            //O(E) both loop combined
+            //O(E) both loop below combined
             for(int i = 0; i < V; i++) {
                 for(int j = 0; j < graph[i].size(); j++) {
                     Edge e = graph[i].get(j);

@@ -161,7 +161,7 @@ public class CyclesInGraph1 {
 
     public static void union(int x, int y, int[] parent) {
         int rootV1 = find(parent, x);       
-        int rootV2 = find(parent, y);
+        int rootV2 = find(parent, y);           // you can skip these 2 lines if you directly too teh rootV1 & rootV2
 
         if(rootV1 != rootV2) {        // if both vertices do not belong to the same set(i.e, root of v1 and v2 is not same) so union it(make new set with the new values included)
             parent[rootV2] = rootV1;  // connect/combine the two different sets by making v1's root as parent of v2's root or vice versa (visualise the tree)
@@ -199,8 +199,9 @@ public class CyclesInGraph1 {
         // METHOD 3- CYCLE DETECTION USING DSU
         System.out.println(isCyclicUsingDSU(graph));
 
-
+        //NOTE: HERE I'M ASSUMING THAT THERE IS ONLY ONE COMPONENT IN THE GRAPH SO WHILE SOLVING 
+        // ON CODING PLATFORMS ALWAYS CONSIDER ALL COMPONENTS OF GRAPH USING FOR LOOP
     }
 }
-
 // DFS one is enough but know every method.
+// https://www.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1

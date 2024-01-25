@@ -25,7 +25,8 @@ Steps to implement:
    if the neighbor's indgree becomes 0 ? if yes add it to q.
 
 Here we don't need visited array as we are only adding elements in q whose indegree is 0 (no edge is present to take
-you again to that node).
+you again to that node and in one go graph will be traversed completely ⭐⭐ even if it has multiple components
+bcz we are using indegree array and initially it stores data of all components).
 */
 
 package Graphs.TopologicalSort;

@@ -115,7 +115,7 @@ public class KosarajusAlgo {
         // STEP 3   (do dfs according to stack nodes on tran. graph)
         while(!stack.isEmpty()) {
             int node = stack.pop(); 
-            if(!visited[node]) {            // remember to update dfs after first step
+            if(!visited[node]) {            // remember to update visited after first step
                 dfs(transpose, node, visited);      // remember dfs will be applied on transpose graph
                 System.out.println();
             }

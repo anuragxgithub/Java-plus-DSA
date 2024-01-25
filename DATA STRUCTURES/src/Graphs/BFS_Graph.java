@@ -81,6 +81,7 @@ public class BFS_Graph {
 
     // THIS IS JUST A SLIGHT VARIATION OF THE ABOVE BFS IMPLEMENTATION "THIS ONE IS BETTER THAN THE ABOVE" ONE BCZ IT ELIMINATES ALREADY VISITED
     // VERTICES TO GET ADDED IN THE QUEUE (as it first checks whether neighbor is visited or not then adding it) "USE THIS ONE"
+    // NOTE: ⭐⭐⭐ ALWAYS USE THIS METHOD OF BFS DUE TO THIS I GOT STUCK IN A QUESTION (SEE IT IN QUESTIONS-> Imp2.java)
     public static void bfs2(ArrayList<Edge> graph[], boolean[] visited, int source) {
         // create a queue
         Queue<Integer> q = new LinkedList<>();
