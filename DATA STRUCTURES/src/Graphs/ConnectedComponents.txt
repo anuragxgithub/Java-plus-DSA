@@ -44,7 +44,7 @@ components in a graph.
     |    |      / \           |      10  
     2 -- 3     6---7          9
 
-    These four graph are not seperate they belong to a single graph for that graph these are connectec components.
+    These four graph are not seperate they belong to a single graph for that graph these are connected components.
     Thats why in any traversal algos we maintain a visited[] array to check whether all nodes/vertex of a graph
     is visited or not.
 

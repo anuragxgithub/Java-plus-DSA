@@ -29,6 +29,8 @@ STEPS-
 1. GET NODES IN STACK (TOPOLOGICAL SORT)
 2. TRANSPOSE THE GRAPH       "(Reverse the direction of edges transpose is ready)"
 3. DO DFS ACCORDING TO STACK NODES(in the order they are stored) ON "TRANSPOSE GRAPH".
+
+https://www.geeksforgeeks.org/problems/strongly-connected-components-kosarajus-algo/1?
 */
 package Graphs;
 
@@ -142,8 +144,8 @@ public class KosarajusAlgo {
         kosarajusAlgo(graph, V);        // Prints the SSC in each line
     }
 }
-
 /*
+
  * TIME COMPLEXITY : O(V+E)
  * SPACE COMPLEXITY : O(V)
  */

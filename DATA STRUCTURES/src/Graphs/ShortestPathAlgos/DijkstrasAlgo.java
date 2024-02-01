@@ -1,5 +1,7 @@
 /*
-----------DIJKSTRA'S ALGORITHM----------
+----------DIJKSTRA'S ALGORITHM----------  (Single source shortest path algo)
+IN INTERVIEW PERSPECTIVE AND QUESTION SOLVING THIS IS GOING TO BE THE MOST IMP AMONG ALL SHORTEST PATH ALGOS
+SO COMMAND IT UNDERSTND IT PROPERLY.
 -> In dijkstra's algo implementation we'll be given with a directed or undirected graph and the graph will be weighted. And source is algo given.
 -> We need to find shortest path for all the nodes in graph from source. 
 -> Dijkstra's algo works on "BFS".
@@ -163,7 +165,8 @@ public class DijkstrasAlgo {
 
 
          dijkstrasAlgo(graph, 0, V);
-        //  Note : you can ignore the visited array thing in dijkstra
+        //  Note : you can ignore the visited array thing in dijkstra bcz once the smallest dist is stored for
+        // a node it won't get relaxed hence won't be added to the queue at the end q will become empty.
     }
 }
 /*

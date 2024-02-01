@@ -1,7 +1,7 @@
 //This is only to understand what happens in STACK memory when a fn calls another fn.
 //You can check this by debugging
 //Any code in java starts by executing main fn so main fn will go first in stack memory
-//A fn will be stored in stack only till it gets it's result back. i.e, a fn in stack
+//A fn will be stored in stack only till it gets its result back. i.e, a fn in stack
 // will be alive till the fn it called gets terminated.
 //Primitives and function calls are stored in stack.
 public class Recursion_1 {

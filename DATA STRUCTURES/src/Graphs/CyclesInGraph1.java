@@ -119,7 +119,7 @@ public class CyclesInGraph1 {
     }
 
     // METHOD 3- CYCLE DETECTION USING DSU (DISJOINT SET UNION) If you don't know about dsu first learn it(useful concept)
-    // We can optimise this.
+    // We can optimise this. Like Path compression and union by size don't use this anywhere while solving question use optimised one.
     public static boolean isCyclicUsingDSU(ArrayList<Edge>[] graph) {
         // Create a parent array
         int[] parent = new int[graph.length];
@@ -132,7 +132,7 @@ public class CyclesInGraph1 {
         // Iterate through all edges of graph, find subset
         // of both vertices of every edge, if for any edge vertex1 and vertex2 has same root/representative
         // then there is cycle in graph.
-        for(int i = 0; i < graph.length; i++) {         // it would be better to use for each loop
+        for(int i = 0; i < graph.length; i++) {         
             ArrayList<Edge> al = graph[i];
             for(int j = 0; j < al.size(); j++) {
                 if(i > 0 && j == 0) {               // why this condition bcz we need to visit one edge only once (other wise always true)
@@ -142,7 +142,7 @@ public class CyclesInGraph1 {
                 int rootV1 = find(parent, e.src);
                 int rootV2 = find(parent, e.dest);
 
-                if(rootV1 == rootV2) {      // that means cycle exist
+                if(rootV1 == rootV2) {      // that means cycle exist (dry run in you mind on simple cyclic graph)
                     return true;
                 }
 
@@ -203,5 +203,4 @@ public class CyclesInGraph1 {
         // ON CODING PLATFORMS ALWAYS CONSIDER ALL COMPONENTS OF GRAPH USING FOR LOOP
     }
 }
-// DFS one is enough but know every method.
 // https://www.geeksforgeeks.org/problems/detect-cycle-in-an-undirected-graph/1

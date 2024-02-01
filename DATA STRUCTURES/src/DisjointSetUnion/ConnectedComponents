@@ -1,0 +1,4 @@
+You can find connected components in a graph using DSU.
+After performing DSU on each edge. At last if you check how many vertices are parent of themselves you will get
+the number of connected componets in a graph.
+Bcz for each tree in a component there is only one root/ representative or ultimate parent.

@@ -1,4 +1,5 @@
 /*
+ * Kind of similar to Dijkstra.
  * Note: You should be able to tell the the approach or dry the this algo because "Interviewer can ask this".
  * Use the set appraoch of understanding/teaching the Prim's Algorithm.
  * 
@@ -121,4 +122,5 @@ public class PrimsAlgo {
     }
     
 }
+// https://www.geeksforgeeks.org/problems/minimum-spanning-tree/1?
 // h.w. in PrimsAlgo2.java

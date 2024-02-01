@@ -21,11 +21,10 @@ public class Recursion_3 {
 //Now, let's trace how the values are being added in this recursive call stack for the calculation of the 4th Fibonacci number:
 
 //    fib(4)
-//        return fib(3) + fib(2)
-//                        return fib(2) + fib(1)      // fib(3) returns 2
-//                                        return fib(1) + fib(0)      // fib(2) returns 1
-//                                                    return 1              // fib(1) returns 1
-//                                                                return 0       // fib(0) returns 0
+//        return fib(3) + fib(2)         // fib(3) returns 2
+//                        return fib(2) + fib(1)      // fib(2) returns 1
+//                                        return fib(1) + fib(0)     // fib(1) returns 1 and fib(0) returns 0
+
 //As the recursive calls return, they pass their result back to the caller.
 //In this case, fib(0) and fib(1) return 0 and 1 to fib(2), which adds them to get 1.
 //fib(2) then returns 1 to fib(3), which adds it with the result of fib(1) to get 2, and so on.

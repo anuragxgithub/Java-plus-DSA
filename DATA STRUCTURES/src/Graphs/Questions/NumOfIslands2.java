@@ -1,121 +1,118 @@
+
 /*
- * https://leetcode.com/problems/number-of-islands/
- * This is same problem but here we can connect lands by moving in four direction only  up, down , left and right
- */
+https://www.geeksforgeeks.org/problems/number-of-islands/1
+THIS QUESTION IS NOW IN PREMIMUM SECTION OF LEETCODE AND CATEGORISED AS "HARD" PROBLEM.
+
+QUETION: WE ARE ASKED TO RETURN THE NO. OF ISLANDS WHICH WERE PRESENT AT EACH QUERY IN A LIST.
+
+STEPS / APPROACH :
+Since here we will make dynamic connections so we can think of using DSU.
+Here also we will consider each cell as a single node. Because this is the nature of DSU.
+1. Consider each cell as individual node (note see the pattern in some other questions we did the same while using DSU)
+   by marking them from 0 to n*m (exclusive).
+   And learn how to access the node if the coordinates are given. (Easy formula: (total cols * given row) + given col
+2. You will maintain a island counter var. and now whenever you get a query to add a island at specific cell you'll
+   without seeing anything add the islandCounter by 1 bcz you are technically adding it.
+   And now you will check its 4 neighbors whether there is island present if yes. Connect it if not already
+   connected as you connect a island decrement the islandCntr by one, each time you connect two diff islands
+   decrement the counter by 1.
+3. Keep adding the islandCntr at each query in a list.
+Also keep track of visited thing if at given query an island already exist then cnt will remain same as the 
+previous query for this query too bcz no changes made. Also this visited will help us to track wether the neighbor
+is island or not. 
+*/
+
 
 package Graphs.Questions;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.ArrayList;
+import java.util.List;
 
 public class NumOfIslands2 {
-    static class Pair {
-        int row;
-        int col;
+    static class DisjointSet {
+        int[] parent;
+        int[] size;
 
-        public Pair(int r , int c) {
-            this.row = r;
-            this.col = c;
+        public DisjointSet(int n) {
+            parent = new int[n];
+            size = new int[n];
+            for(int i = 0; i < n; i++) {
+                parent[i] = i;
+                size[i] = 1;
+            }
         }
-    }
-    public static void bfs(char[][] grid, boolean[][] visited,  int i, int j) {
-        Queue<Pair> q = new LinkedList<>();
-        q.add(new Pair(i, j));
-        visited[i][j] = true;
-        int m = grid.length;
-        int n = grid[0].length;
+        
+        // finds the ultimate parent/root of i
+        public int find(int i) {
+            if(parent[i] == i) {
+                return i;
+            }
+            return parent[i] = find(parent[i]);  // path compression
+        }
 
-        while(!q.isEmpty()) {
-            int currRow = q.peek().row;
-            int currCol = q.peek().col;
-            q.poll();
-
-            // traverse the neighbors and mark them as visited if its a land
-            for(int[] direction : new int[][] {{-1, 0}, {0, -1}, {0, 1}, {1, 0}}) { // up , left, right, bottom  //NOTE: DON'T DO THIS WAY SIMPLY CREATE THE DIRECTION ARRAY AT THE BEGINNING IT PREVENT FROM CREATING AGAIN AND AGAIN
-                int neighborRow = currRow + direction[0];
-                int neighborCol = currCol + direction[1]; 
-                if(neighborCol >= 0 && neighborCol < n && neighborRow >= 0 && neighborRow < m && 
-                    !visited[neighborRow][neighborCol] && grid[neighborRow][neighborCol] == '1') {
-                    visited[neighborRow][neighborCol] = true;
-                    q.add(new Pair(neighborRow, neighborCol));
-                    }
+        public void unionBySize(int rootX, int rootY) {
+            if(size[rootX] < size[rootY]) {
+                parent[rootX] = rootY;
+                size[rootY] += size[rootX];
+            } else {
+                // for other two cases make rootX as root/repres. of rootY
+                parent[rootY] = rootX;
+                size[rootX] += size[rootY];
             }
         }
     }
-    
-    public static int numIslands(char[][] grid) {
-        // APPROACH 2- BFS  (1st was union find in DisjointSet directory)
 
-        int m = grid.length;
-        int n = grid[0].length;          // m*n grid is given
-        boolean[][] visited = new boolean[m][n];
-        int cnt = 0; 
-        for(int rows = 0; rows < m; rows++) {
-            for(int cols = 0; cols < n; cols++) {
-                if(!visited[rows][cols] && grid[rows][cols] == '1') {
-                    cnt++;          // count the connected component
-                    bfs(grid, visited, rows, cols);
+    static boolean isValid(int nr, int nc, int rows, int cols) {
+        return nr >= 0 && nr < rows && nc >= 0 && nc < cols;
+    }
+
+    public static List<Integer> numOfIslands(int rows, int cols, int[][] operators) {
+        ArrayList<Integer> ans = new ArrayList<>();
+        DisjointSet ds = new DisjointSet(rows*cols);  // that many nodes will be there
+        boolean[][] visited = new boolean[rows][cols];
+        int cnt = 0;
+        int[][] directions = new int[][] {{-1,0}, {0, -1}, {+1, 0}, {0, +1}};
+        for(int[] op : operators) {
+            int r = op[0];
+            int c = op[1];
+            if(visited[r][c]) {     // if already a island at given query then cont will remain same
+                ans.add(cnt);  // don't forget to add it
+                continue;
+            }
+            visited[r][c] = true;
+            cnt++;
+
+            for(int[] d : directions) {
+                int nr = r + d[0];
+                int nc = c + d[1];
+                   
+                if(isValid(nr, nc , rows, cols)) {
+                    if(visited[nr][nc] == true) { // also check that neighbor cell is a island only then we go and connect them 
+                        int nodeNo = (cols * r) + c;              // total cols * current row + current col
+                        int adjNodeNo = (cols * nr) + nc;
+                        if(ds.find(nodeNo) != ds.find(adjNodeNo)) {  // check if connection already exist or we need to connect them
+                            cnt--;   // making connection so island count will decrease
+                            ds.unionBySize(ds.find(nodeNo), ds.find(adjNodeNo));
+                        } 
+                    }   
                 }
             }
+            ans.add(cnt);
         }
-        return cnt;
+        return ans;
     }
-
-// ---------------------------------- HERE DFS APPROACH ------------------------------------------------//
-    
-    public static void dfs(char[][] grid, boolean[][] visited, int row, int col) {
-        if(row < 0 || row >= grid.length || col < 0 || col >= grid[0].length 
-        || grid[row][col] != '1' || visited[row][col] == true) {
-            return;
-           }
-        visited[row][col] = true;
-        dfs(grid, visited, row-1, col);  // up
-        dfs(grid, visited, row, col-1);  // left
-        dfs(grid, visited, row, col+1);  // right
-        dfs(grid, visited, row+1, col);  // bottom 
-    }
-
-    public static int numIslandsDFS(char[][] grid) {
-        // APPROACH 3- DFS
-
-        int m = grid.length;
-        int n = grid[0].length;          // m*n grid is given
-        boolean[][] visited = new boolean[m][n];
-        int cnt = 0; 
-        for(int rows = 0; rows < m; rows++) {
-            for(int cols = 0; cols < n; cols++) {
-                if(!visited[rows][cols] && grid[rows][cols] == '1') {
-                    cnt++;          // count the connected component
-                    dfs(grid, visited, rows, cols);
-                }
-            }
-        }
-        return cnt;
-    }
-
-
-
 
     public static void main(String[] args) {
-        char[][] grid = {
-            {'1', '1', '1', '1', '1'},
-            {'0', '0', '1', '0', '0'},
-            {'0', '0', '1', '0', '0'},
-            {'1', '1', '1', '1', '1'}
-        };
+        int[][] operators = new int[][] {{1,3}, {0,3}, {0,1}, {1,1}, {1,0}, {1,2}, {0,3}, {1,2}};
+        List<Integer> ans = numOfIslands(2, 4, operators);
+        System.out.println(ans);
 
-        System.out.println(numIslands(grid));
-        System.out.println(numIslandsDFS(grid));
     }
 }
 
-/*
- * FOR BFS
- * Time Complexity: O(m * n)
- * Space Complexity: O(m * n)
- */
 
-/*
- * FOR DFS
- * 
- */
+
+
+
+
+

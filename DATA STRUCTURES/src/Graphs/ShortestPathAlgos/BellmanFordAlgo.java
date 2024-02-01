@@ -16,7 +16,7 @@
  * 1. Start with initialising the distance in dist arry for each vertex as infinity except the src.
  * 2. Now, just run a loop to visit all the edges and for all the edges peform relaxation(updating dist. estimates).
  *    Do this until the shortest path get determined.
- * 3. And it will be determined if we do relaxation for each vertex V-1 times.
+ * 3. And it will be determined if we do relaxation for each vertex V-1 times in the worst case.
  * 
  */
 
@@ -67,7 +67,7 @@ public class BellmanFordAlgo {
 
         for(int k = 0; k < V-1; k++) {    //O(V)
             //O(E) both loop below combined
-            for(int i = 0; i < V; i++) {
+            for(int i = 0; i < V; i++) {                      // relaxation for each vertex v-1 times
                 for(int j = 0; j < graph[i].size(); j++) {
                     Edge e = graph[i].get(j);
                     int u = e.src;
@@ -116,12 +116,13 @@ public class BellmanFordAlgo {
          createGraph(graph);
 
         bellmanFordAlgo(graph, 0, V);
+        // https://www.geeksforgeeks.org/problems/distance-from-the-source-bellman-ford-algorithm/1?
     } 
 }
 
 /*
  * NOTE: 
- * -> BELLMAN FORD ALGO DOES NOT WORK FOR "NEGATIVE WEIGHT CYCLE".
+ * -> BELLMAN FORD ALGO CAN DETECT "NEGATIVE WEIGHT CYCLE".
  * -> Negative wt Cycle : means when cycle is getting formed from edges a,b and c. If wtOf(a+b+c) < 0 that is called 
  * negative weight cycle.
  * -> Why don't work? 

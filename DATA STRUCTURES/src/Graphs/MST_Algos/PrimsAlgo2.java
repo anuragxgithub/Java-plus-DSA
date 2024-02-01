@@ -1,6 +1,6 @@
 
 
-// here we'll see to store the mst edges everything else wil remain same
+// here we'll see how to store the mst edges everything else wil remain same
 
 package Graphs.MST_Algos;
 
