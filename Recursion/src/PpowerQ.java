@@ -21,10 +21,10 @@ public class PpowerQ {
         } else {   // odd
             return p * pow(p, q/2) * pow(p, q/2);
         }
-        // but here nothing got improved no of calls are same or even more
+        // but here nothing got improved no. of calls are same or even more
         // so just change it little, like given below:
     }
-    static int powOp(int p, int q) {    // O(log(q))      "improved a lot"
+    static int powOp(int p, int q) {    // O(log(q)) bcz getting divided in half each time    "improved a lot"
         if(q == 0) return 1;
 
         int smallPow = powOp(p, q/2);  // calculating once and using everywhere else
