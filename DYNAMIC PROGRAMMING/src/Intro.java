@@ -51,7 +51,7 @@ public class Intro {
         return dp[n];
     }
 
-    public static void main(String[] args) {    // O(n)   bcz of skewed recursive tree
+    public static void main(String[] args) {    // O(2n) ~ O(n)   bcz of skewed recursive tree
         // Find the nth fibonacci number
         int n = 3;
         int[] f = new int[n+1];           // here store the calculations which is already calculated (memoization)
