@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6fad27e7-a2f0-4b00-a596-1684a7cd5d32" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../BASIC_PROJECTS/src" beforeDir="false" afterPath="$PROJECT_DIR$/../BASIC_PROJECTS/src" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKTRACKING/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKTRACKING/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKTRACKING/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/Recursion.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKTRACKING/BACKTRACKING.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/Armstrong.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/Armstrong.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/CountDigits.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/CountDigits.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/FiboFormula.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/FiboFormula.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/GCD_3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/GCD_3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/GCD_Intro.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/GCD_Intro.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/GCD_Intro2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/GCD_Intro2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/Kmultiples.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/Kmultiples.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/OnetoN.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/OnetoN.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/PpowerQ.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/PpowerQ.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/RECOMMENDED.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/RECOMMENDED.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/Random.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/Random.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/RecursionOnArrays/LastIndexOfTarget.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/RecursionOnArrays/LastIndexOfTarget.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/RecursionOnArrays/LinearSearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/RecursionOnArrays/LinearSearch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/RecursionOnArrays/LinearSearch2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/RecursionOnArrays/LinearSearch2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/RecursionOnArrays/PrintAllValues.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/RecursionOnArrays/PrintAllValues.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/RecursionOnArrays/PrintMax.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/RecursionOnArrays/PrintMax.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/RecursionOnArrays/SumOfElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/RecursionOnArrays/SumOfElements.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/RecursionOnArrays/isSorted.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/RecursionOnArrays/isSorted.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/RecursionOnStrings/CheckPalindrome.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/RecursionOnStrings/CheckPalindrome.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/RecursionOnStrings/RemoveOccurrences.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/RecursionOnStrings/RemoveOccurrences.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/RecursionOnStrings/ReverseString.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/RecursionOnStrings/ReverseString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/Recursion_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/Recursion_1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/Recursion_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/Recursion_2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/Recursion_3.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/Recursion_3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/Recursion_BS.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/Recursion_BS.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/Recursion_Factorial.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/Recursion_Factorial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/Recursion_Pattern.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/Recursion_Pattern.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/Recursion_SumOFn.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/Recursion_SumOFn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/ReverseNum.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/ReverseNum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/SumOfDigits.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/SumOfDigits.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/out/production/Recursion/SumTillN.class" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/out/production/Recursion/SumTillN.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/Armstrong.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/Armstrong.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/CountDigits.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/CountDigits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/FiboFormula.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/FiboFormula.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/GCD_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/GCD_3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/GCD_Intro.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/GCD_Intro.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/GCD_Intro2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/GCD_Intro2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/Kmultiples.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/Kmultiples.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/OnetoN.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/OnetoN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/PpowerQ.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/PpowerQ.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/RECOMMENDED.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/RECOMMENDED.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/Random.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/Random.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/RecursionOnArrays/LastIndexOfTarget.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/RecursionOnArrays/LastIndexOfTarget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/RecursionOnArrays/LinearSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/RecursionOnArrays/LinearSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/RecursionOnArrays/LinearSearch2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/RecursionOnArrays/LinearSearch2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/RecursionOnArrays/PrintAllValues.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/RecursionOnArrays/PrintAllValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/RecursionOnArrays/PrintMax.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/RecursionOnArrays/PrintMax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/RecursionOnArrays/SumOfElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/RecursionOnArrays/SumOfElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/RecursionOnArrays/isSorted.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/RecursionOnArrays/isSorted.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/RecursionOnStrings/CheckPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/RecursionOnStrings/CheckPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/RecursionOnStrings/RemoveOccurrences.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/RecursionOnStrings/RemoveOccurrences.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/RecursionOnStrings/ReverseString.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/RecursionOnStrings/ReverseString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/Recursion_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/Recursion_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/Recursion_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/Recursion_2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/Recursion_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/Recursion_3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/Recursion_BS.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/Recursion_BS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/Recursion_Factorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/Recursion_Factorial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/Recursion_Pattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/Recursion_Pattern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/Recursion_SumOFn.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/Recursion_SumOFn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/ReverseNum.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/ReverseNum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/SumOfDigits.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/SumOfDigits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Recursion/src/SumTillN.java" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/src/SumTillN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionArrayQues/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionArrayQues/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionArrayQues/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionArrayQues/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionArrayQues/RecursionArrayQues.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionArrayQues/out/production/RecursionArrayQues/LinearSearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionArrayQues/out/production/RecursionArrayQues/ReturnArrayList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionArrayQues/out/production/RecursionArrayQues/ReturnArrayList2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionArrayQues/out/production/RecursionArrayQues/RotatedBinarySearch.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionArrayQues/out/production/RecursionArrayQues/SortedOrNot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionArrayQues/src/LinearSearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionArrayQues/src/ReturnArrayList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionArrayQues/src/ReturnArrayList2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionArrayQues/src/RotatedBinarySearch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionArrayQues/src/SortedOrNot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKTRACKING/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RecursionBacktracking.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../RECURSION/RECURSION.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RecursionBacktracking/AllPaths.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RecursionBacktracking/MazeAndAllPaths.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RecursionBacktracking/NKnights.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RecursionBacktracking/N_Queens.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RecursionBacktracking/NoOfPaths.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RecursionBacktracking/PathWithRestrictions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RecursionBacktracking/ReturningPath.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RecursionBacktracking/ReturningPathDiagonal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RecursionBacktracking/SudokuSolver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RecursionBacktracking/Two_Queens.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RecursionBacktracking/⭐FileCreated" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AllPaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKTRACKING/src/AllPaths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MazeAndAllPaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKTRACKING/src/MazeAndAllPaths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NKnights.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKTRACKING/src/NKnights.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/N_Queens.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKTRACKING/src/N_Queens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NoOfPaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKTRACKING/src/NoOfPaths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PathWithRestrictions.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKTRACKING/src/PathWithRestrictions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReturningPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKTRACKING/src/ReturningPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReturningPathDiagonal.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKTRACKING/src/ReturningPathDiagonal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SudokuSolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKTRACKING/src/SudokuSolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Two_Queens.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKTRACKING/src/Two_Queens.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/⭐FileCreated" beforeDir="false" afterPath="$PROJECT_DIR$/../BACKTRACKING/src/⭐FileCreated" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionBasicQue/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionBasicQue/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionBasicQue/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionBasicQue/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionBasicQue/RecursionBasicQue.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionBasicQue/out/production/RecursionBasicQue/Concept_PostPreIncr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionBasicQue/out/production/RecursionBasicQue/CountZeros.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionBasicQue/out/production/RecursionBasicQue/Nto1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionBasicQue/out/production/RecursionBasicQue/OnetoN.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionBasicQue/out/production/RecursionBasicQue/PalindromeNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionBasicQue/out/production/RecursionBasicQue/ReverseNumber.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionBasicQue/out/production/RecursionBasicQue/SumOfNnums.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionBasicQue/out/production/RecursionBasicQue/SumProdOfDigits.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionBasicQue/out/production/RecursionBasicQue/factorial.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionBasicQue/src/Concept_PostPreIncr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionBasicQue/src/CountZeros.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionBasicQue/src/Nto1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionBasicQue/src/OnetoN.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionBasicQue/src/PalindromeNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionBasicQue/src/ReverseNumber.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionBasicQue/src/SumOfNnums.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionBasicQue/src/SumProdOfDigits.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionBasicQue/src/factorial.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionPatternsQues/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionPatternsQues/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionPatternsQues/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionPatternsQues/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionPatternsQues/RecursionPatternsQues.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionPatternsQues/out/production/RecursionPatternsQues/NOTE" beforePathEscaped="$PROJECT_DIR$/../../##Java/RecursionPatternsQues/out/production/RecursionPatternsQues/NOTE🌟🌟" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionPatternsQues/out/production/RecursionPatternsQues/P_1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionPatternsQues/out/production/RecursionPatternsQues/P_2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionPatternsQues/out/production/RecursionPatternsQues/P_3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionPatternsQues/out/production/RecursionPatternsQues/P_4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionPatternsQues/src/NOTE" beforePathEscaped="$PROJECT_DIR$/../../##Java/RecursionPatternsQues/src/NOTE🌟🌟" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionPatternsQues/src/P_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionPatternsQues/src/P_2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionPatternsQues/src/P_3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionPatternsQues/src/P_4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/RecursionStringQue.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/out/production/RecursionStringQue/NOTE⭐" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/out/production/RecursionStringQue/Permutations.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/out/production/RecursionStringQue/Permutations_Count.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/out/production/RecursionStringQue/Permutations_Return.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/out/production/RecursionStringQue/Q_DialerPad.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/out/production/RecursionStringQue/SkipCharacter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/out/production/RecursionStringQue/SkipString.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/out/production/RecursionStringQue/SubS_returnArraylist.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/out/production/RecursionStringQue/SubSequence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/out/production/RecursionStringQue/SubSequenceAscii.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/out/production/RecursionStringQue/SubSetRecursion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/out/production/RecursionStringQue/SubsetDuplicates.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/out/production/RecursionStringQue/Subset_Iterative.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/src/NOTE⭐" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/src/Permutations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/src/Permutations_Count.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/src/Permutations_Return.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/src/Q_DialerPad.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/src/SkipCharacter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/src/SkipString.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/src/SubS_returnArraylist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/src/SubSequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/src/SubSequenceAscii.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/src/SubSetRecursion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/src/SubsetDuplicates.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../RecursionStringQue/src/Subset_Iterative.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SortingRecursion/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SortingRecursion/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SortingRecursion/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SortingRecursion/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SortingRecursion/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SortingRecursion/SortingRecursion.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SortingRecursion/out/production/SortingRecursion/BubbleSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SortingRecursion/out/production/SortingRecursion/InBuiltSorting.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SortingRecursion/out/production/SortingRecursion/MergeSort_1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SortingRecursion/out/production/SortingRecursion/MergeSort_2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SortingRecursion/out/production/SortingRecursion/QuickSelectAlgo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SortingRecursion/out/production/SortingRecursion/QuickSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SortingRecursion/out/production/SortingRecursion/SelectionSort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SortingRecursion/out/production/SortingRecursion/_Note " beforePathEscaped="$PROJECT_DIR$/../../##Java/SortingRecursion/out/production/SortingRecursion/_Note 🌟🌟" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SortingRecursion/src/BubbleSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SortingRecursion/src/InBuiltSorting.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SortingRecursion/src/MergeSort_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SortingRecursion/src/MergeSort_2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SortingRecursion/src/QuickSelectAlgo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SortingRecursion/src/QuickSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SortingRecursion/src/SelectionSort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SortingRecursion/src/_Note " beforePathEscaped="$PROJECT_DIR$/../../##Java/SortingRecursion/src/_Note 🌟🌟" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2RyjeHahGqnNGPklRct2h43G4nP" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.NoOfPaths">
+    <configuration name="NKnights" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NKnights" />
+      <module name="BACKTRACKING" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="N_Queens" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="N_Queens" />
+      <module name="BACKTRACKING" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NoOfPaths" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NoOfPaths" />
+      <module name="BACKTRACKING" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReturningPath" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ReturningPath" />
+      <module name="BACKTRACKING" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SudokuSolver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SudokuSolver" />
+      <module name="BACKTRACKING" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <setting name="path" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.NoOfPaths" />
+        <item itemvalue="Application.ReturningPath" />
+        <item itemvalue="Application.SudokuSolver" />
+        <item itemvalue="Application.NKnights" />
+        <item itemvalue="Application.N_Queens" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6fad27e7-a2f0-4b00-a596-1684a7cd5d32" name="Changes" comment="" />
+      <created>1688229313025</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1688229313025</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/../BACKTRACKING/src/PathWithRestrictions.java</url>
+          <line>14</line>
+          <properties class="PathWithRestrictions" method="pathWithRestrictedMaze">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="5" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

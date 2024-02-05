@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../BACKTRACKING/BACKTRACKING.iml" filepath="$PROJECT_DIR$/../BACKTRACKING/BACKTRACKING.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RECURSION.iml" filepath="$PROJECT_DIR$/RECURSION.iml" />
     </modules>
   </component>
 </project>
