@@ -26,3 +26,4 @@ public class PrimeOptimised {
         }
     }
 }
+//https://www.geeksforgeeks.org/problems/frogs-and-jumps--170647/1

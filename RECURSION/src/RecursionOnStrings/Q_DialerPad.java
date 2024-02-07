@@ -1,5 +1,6 @@
 package RecursionOnStrings;//LEETCODE 17
 import java.util.ArrayList;
+// "", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"    (2-9) given
 public class Q_DialerPad {
     public static void main(String[] args) {
         System.out.println(letterCombinationsList("", "79"));
@@ -12,7 +13,7 @@ public class Q_DialerPad {
             return list;
         }
 
-        int digit = up.charAt(0) - '0';
+        int digit = up.charAt(0) - '0';   // it is happening because of ascii values
         int i=(digit-2)*3;
         if(digit > 7) {  //to maintain the validity of
             i+=1;
