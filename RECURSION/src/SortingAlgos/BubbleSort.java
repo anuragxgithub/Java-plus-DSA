@@ -1,10 +1,9 @@
 package SortingAlgos;//PREREQUISITE:
 // 1: KNOW HOW TO DO BUBBLE SORT USING LOOPS.
 // 2: IF YOU KNOW PATTERN PRINTING USING RECURSION (LIKE INVERT RIGHT TRIANGLE) THEN THIS
-// IS JUST HALUA.
 
 //Tip: As always: perform recursion by thinking it as loop.
-//Literally halua
+
 import java.util.Arrays;
 
 public class BubbleSort {
@@ -15,6 +14,8 @@ public class BubbleSort {
     }
 
     static void sort(int[] arr, int i, int j) {
+        // As we know in bubble sort after one complete iteration biggest is at the last idx and so on
+        // that means sorting starts from end in bubble sort.
         if(i == arr.length-1) {
             return;
         }
@@ -26,6 +27,7 @@ public class BubbleSort {
             }
             sort(arr, i, j+1);
         } else {
+//            System.out.println(Arrays.toString(arr));  // proof that recursion is correct
             sort(arr, i+1, 0);
         }
     }
