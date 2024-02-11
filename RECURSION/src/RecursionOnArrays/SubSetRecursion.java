@@ -12,7 +12,7 @@ public class SubSetRecursion {
     }
 
     static void subsetRecursion(int[] nums, int index, List<Integer> current, List<List<Integer>> subsets) {
-        if (index == nums.length) {     //baseCase
+        if (index == nums.length) {     //base Case
             subsets.add(new ArrayList<>(current));
             return;
         }
@@ -22,6 +22,6 @@ public class SubSetRecursion {
         // including
         current.add(nums[index]);
         subsetRecursion(nums, index + 1, current, subsets);
-        current.remove(current.size() - 1);
+        current.remove(current.size() - 1);  // back tracking bcz it(current) will remain same for all call
     }
 }

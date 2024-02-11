@@ -1,9 +1,11 @@
 package RecursionOnArrays;//NOTE: SEE THIS AFTER SUBSET_ITERATIVE.JAVA
 //Easy Peasy.
 //SEE NOTES ⭐⭐
+// Here we need to return the subset but, we have to make sure that we do not return duplicate subsets
+// like {1,4} or {4,1} for {1,4} not allowed
 import java.util.List;
 import java.util.ArrayList;
-public class SubsetDuplicates {
+public class SubsetDuplicatesIter {
     public static void main(String[] args) {
         int[] arr  = {1,2,2};
         List<List<Integer>> ans = subsetDuplicate(arr);
@@ -16,7 +18,7 @@ public class SubsetDuplicates {
         List<List<Integer>> outerList = new ArrayList<>(); //2d list is created
         outerList.add(new ArrayList<>());  //Initially empty list added
         for(int num : arr) {
-            int n = outerList.size(); //size is considered, so that much of new copy is created.
+            int n = outerList.size(); //size is considered, so, that much of new copy is created.
             for (int i = 0; i < n; i++) {
                 List<Integer> innerLists = new ArrayList<>(outerList.get(i)); //copies will be created
                 innerLists.add(num);  //num will be added in copied elements

@@ -105,28 +105,48 @@ public class Practice {
     // }
 
     // SELECTION SORT
-    public static void selectionSort(int[] arr, int i, int j, int min) {
-        // find the smallest or largest item's idx and put it to its correct idx
-        if(i == arr.length-1) {
-            return;
-        }
-        if(j < arr.length) {
-            if(arr[min] > arr[j]) {
-                selectionSort(arr, i, j+1, j);
-            } else {
-                selectionSort(arr, i, j+1, min);
-            }
-        }   // after its ending we will have min element's idx in min var
-        else {
-            // swap the minimum element to the first element and so on..
-            int temp = arr[min];
-            arr[min] = arr[i];
-            arr[i] = temp; 
-            System.out.println(Arrays.toString(arr)); // proof that recursion is implemented correctly
+    // public static void selectionSort(int[] arr, int i, int j, int min) {
+    //     // find the smallest or largest item's idx and put it to its correct idx
+    //     if(i == arr.length-1) {
+    //         return;
+    //     }
+    //     if(j < arr.length) {
+    //         if(arr[min] > arr[j]) {
+    //             selectionSort(arr, i, j+1, j);
+    //         } else {
+    //             selectionSort(arr, i, j+1, min);
+    //         }
+    //     }   // after its ending we will have min element's idx in min var
+    //     else {
+    //         // swap the minimum element to the first element and so on..
+    //         int temp = arr[min];
+    //         arr[min] = arr[i];
+    //         arr[i] = temp; 
+    //         System.out.println(Arrays.toString(arr)); // proof that recursion is implemented correctly
             
-            selectionSort(arr, i+1, i+1, i+1);  // again we need to check the minimum from the unsorted part so taking first item of unsorted part as smallest item
-        }
-    }
+    //         selectionSort(arr, i+1, i+1, i+1);  // again we need to check the minimum from the unsorted part so taking first item of unsorted part as smallest item
+    //     }
+    // }
+
+    // 7. SUBSEQUENCES
+    // public static void subsequences(String str, String temp, HashSet<String> set, int n) {
+    //     if(temp.length() == n) {
+    //         if(set.add(temp)) {
+    //             System.out.print(temp + " ");
+    //         }
+    //         return;
+    //     }
+    //     if(str.length() == 0) {
+    //         return;
+    //     }
+        
+
+    //     // not including
+    //     subsequences(str.substring(1), temp, set, n);
+    //     // including 
+    //     char ch = str.charAt(0);
+    //     subsequences(str.substring(1), temp+ch, set, n);
+    // }
 
     public static void main(String[] args) {
         // 1. BUUBLE SORT  ------
@@ -153,6 +173,18 @@ public class Practice {
         // int[] arr = new int[] {4,3,2,1};
         // selectionSort(arr, 0, 0, 0);        // taking first element of array as smallest for now
         // System.out.println("From main : " + Arrays.toString(arr));
+
+        // 7. Subsequences  Codeforces quesetion brute force
+        // int n = 2, k = 2;
+        // StringBuilder str = new StringBuilder();
+        // for(char i = 'a'; i < 'a'+k; i++) {
+        //     str.append(i);
+        // }
+        // for(int i = 1; i < n; i++) {
+        //     str.append(str);
+        // }
+        // HashSet<String> set = new HashSet<>();
+        // subsequences(str.toString(), "", set, n);
     }
 
 }

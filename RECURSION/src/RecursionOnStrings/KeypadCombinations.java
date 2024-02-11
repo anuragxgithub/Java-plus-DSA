@@ -24,3 +24,4 @@ public class KeypadCombinations {
         System.out.println(ans);
     }
 }
+// Only combine the first char with all available char easiest.
