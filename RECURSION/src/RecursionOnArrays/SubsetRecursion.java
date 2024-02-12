@@ -3,7 +3,7 @@ package RecursionOnArrays;
 import java.util.List;
 import java.util.ArrayList;
 
-public class SubSetRecursion {
+public class SubsetRecursion {
     public static void main(String[] args) {
         int[] nums = {1,2,3};
         List<List<Integer>> subsets = new ArrayList<>();   //2d list

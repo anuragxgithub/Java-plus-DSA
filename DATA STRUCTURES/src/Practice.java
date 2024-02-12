@@ -95,7 +95,7 @@ public class Practice {
     //             arr[j] = arr[j-1];
     //             arr[j-1] = temp;
     //         } else {
-    //             j = 0;      // break from here
+    //             j = 0;      // break from here (bcz element got its correct position)
     //         }
     //         insertionSort(arr, n, i, j-1);
     //     } else {

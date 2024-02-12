@@ -9,6 +9,9 @@ n!/2! unique permutations  bcz 1 is repeating two times. So 3!/2! = 3. These per
 
 Similarly for {1,1,2,2}. There will be : 4!/2!*2! = 24/4 = 6 unique permutations.
 
+NOTE : THERE IS ONLY A LITTLE LOGICAL TWEAK IN NORMAL PERMUTATIONS FINDING APPROACH.
+here i applied this tweak to all (2-3) methods which we used to find the permutations.
+But care for swapping way only.
 --------------- Coming to question ------------------
 
 1. Approach 1: Same as we used to do in the normal permutations with distinct nums.
@@ -29,7 +32,8 @@ Similarly for {1,1,2,2}. There will be : 4!/2!*2! = 24/4 = 6 unique permutations
    So for this we will use the same thing as we used in 2nd approach to track this.
 
  NOTE: FORM APPROACH 2 AND APPROACH 3 YOU CAN USE ANY.
- DRY RUN ⭐⭐
+ But I will choose 2 (swapping bcz its easy to visualise and don't uses extra ds)
+ DRY RUN FOR any input ⭐⭐
 */
 
 package RecursionOnArrays;
@@ -63,7 +67,7 @@ public class PermutesWithDuplicates {
         }
     }
 
-    // METHOD 2
+    // METHOD 2   (swapping way)  Remember this only because we will follow this approach only
     public static void permutDup2(ArrayList<Integer> arr, int idx, ArrayList<ArrayList<Integer>> ans) {
         if(idx == arr.size()) {
             ans.add(new ArrayList<>(arr));
@@ -82,7 +86,7 @@ public class PermutesWithDuplicates {
         }
     }
 
-    // METHOD 3
+    // METHOD 3  (using temp and visited approach)
     public static void permutDup3(int[] arr, boolean[] visited, ArrayList<Integer> temp, ArrayList<ArrayList<Integer>> ans) {
         if(temp.size() == arr.length) {
             ans.add(new ArrayList<>(temp));
@@ -90,7 +94,7 @@ public class PermutesWithDuplicates {
         }
         boolean[] used = new boolean[21];
         for(int i = 0; i<arr.length; i++) {
-            if(!used[arr[i]+10] && !visited[i]) {
+            if(!used[arr[i]+10] && !visited[i]) {  // is any char is not repeated at particular lv go ahead
                 temp.add(arr[i]);
                 used[arr[i]+10] = true;
                 visited[i] = true;
@@ -139,4 +143,4 @@ public class PermutesWithDuplicates {
 }
 // https://leetcode.com/problems/permutations-ii/description/
 // What if this is not given -10 <= arr[i] <= 10
-// then we can simply use hashset.
+// then we can simply use hashset. ⭐⭐
