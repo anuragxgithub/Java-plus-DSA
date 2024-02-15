@@ -1,0 +1,32 @@
+Memoization (Top-Down Approach):
+
+-> In memoization, the approach starts from the top (the original problem) and works its way
+   down to smaller subproblems.
+-> It's called "top-down" because you start with the main problem and recursively break it 
+   down into smaller subproblems, solving each subproblem only once and then storing its result
+(memoization) to avoid redundant calculations.
+-> In other words, you start from the top (the original problem) and then go down to solve 
+   subproblems as needed.
+
+
+Tabulation (Bottom-Up Approach):
+
+-> In tabulation, the approach starts from the bottom (the smallest subproblems) and works
+   its way up to the solution of the main problem.
+-> It's called "bottom-up" because you start with the smallest subproblems  
+   (usually by initializing a table with solutions to these subproblems) and iteratively
+   build up solutions for larger subproblems until you reach the solution for the main problem.
+-> In other words, you start from the bottom (the base cases or smallest subproblems) and
+   then iteratively build up solutions for larger subproblems until you reach the solution
+   for the main problem.
+
+Here's a summary:
+Memoization: Top-down approach where you start solving the main problem and recursively solve
+             smaller subproblems, memoizing their results to avoid redundant calculations.
+Tabulation: Bottom-up approach where you start solving the smallest subproblems and iteratively
+            build up solutions for larger subproblems until you reach the solution for the main
+            problem.
+
+Both approaches achieve the same goal of solving dynamic programming problems by breaking 
+them down into smaller
+subproblems, but they differ in the direction in which they construct the solutions.
