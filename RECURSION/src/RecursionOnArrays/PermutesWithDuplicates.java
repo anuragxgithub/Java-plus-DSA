@@ -33,7 +33,7 @@ But care for swapping way only.
 
  NOTE: FORM APPROACH 2 AND APPROACH 3 YOU CAN USE ANY.
  But I will choose 2 (swapping bcz its easy to visualise and don't uses extra ds)
- DRY RUN FOR any input ⭐⭐
+ DRY RUN IS GIVEN SEE (DryRunPermsDuplicates.jpeg) ⭐⭐⭐⭐⭐⭐⭐⭐
 */
 
 package RecursionOnArrays;
@@ -74,7 +74,7 @@ public class PermutesWithDuplicates {
             return;
         }
         boolean[] visited = new boolean[21];  // why creating here bcz we want same num do not come in
-// same idx only and this will only happen for the same level and after that we have to backtrack the changes so here
+// same idx and this will only happen for the same level calls from a node and after that we have to backtrack the changes
         for(int i = idx; i < arr.size(); i++) {
             if(!visited[arr.get(i)+10]) {
                 visited[arr.get(i)+10] = true;

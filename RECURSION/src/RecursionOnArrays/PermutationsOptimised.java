@@ -15,6 +15,8 @@ DRY RUN :
         /        |      |       |      |       \
        /         |      |       |      |        \
       1,2,3    1,3,2   2,1,3   2,3,1  3,2,1    3,1,2   (last idx guys got swapped with themselves bcz no other options are available before last idx every idx got all the possible positions)
+
+      See dry run DryRunPermutationsOp.jpeg
 */
 
 
