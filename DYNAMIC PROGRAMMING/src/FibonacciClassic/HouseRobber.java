@@ -61,7 +61,7 @@ public class HouseRobber {
 
         // Initialiazation
         dp[0] = nums[0];
-        dp[1] = Math.max(nums[0], nums[1]);
+        dp[1] = Math.max(nums[0], nums[1]);  // https://chat.openai.com/share/55b62ba7-a375-4972-a50f-f74fc6d443d3
 
         for(int i = 2; i < n; i++) {
             // (robbing the current house + robbing the house two steps back), and (skipping the current house and robbing the previous house)
