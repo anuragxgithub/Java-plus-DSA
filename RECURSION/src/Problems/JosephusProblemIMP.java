@@ -2,6 +2,18 @@
 https://leetcode.com/problems/find-the-winner-of-the-circular-game/
 
 IMPORTANT QUESTION, SHOWS HOW BEAUTIFUL RECURSION IS.
+
+---------------- EXPLANATION FOR OPTIMISED APPROACH (USING RECURSION)-----------------------
+NOTE: AFTER ONE PERSON IS DEAD NOTHING IS GOING TO CHANGE, NUMBERING OF OTHER PLAYERS WILL REMAIN SAME
+
+THE IDEA OF IMPLEMENTING THIS ALGO IS BASICALLY WE ARE ESTABLISHING THE RELATIONSHIP BETWEEN WHAT
+WILL ACTUALLY HAPPEN AND WHAT RECURSION WILL. WE WILL USE THIS RELATION AND APPLY IT ON THE RECURSION
+(BASICALLY MODIFYING WHICH NUMBER IN RECURSION SHOULD REPRESENT WHICH PERSON) we are deriving this
+using the current position of the gun in real game vs in our recursion thing.
+⭐⭐
+Bcz in recursion gun position will remain same on the same person (0th) person so our task is to
+relate it to the real game and provide that gun to the player where it should currently belong.
+⭐⭐ EasyPeasy  (and we do it by adding k and to maintain circular thing % it by n simple)
  */
 
 package Problems;
@@ -49,6 +61,8 @@ public class JosephusProblemIMP {
 
     // OPTIMISED CODE
     // Method 2 Optimised
+    // NOTE THIS IS CODE FOR 0 BASED INDEXING (i.e, counting from 0)
+    // TO MAKE IT 1 BASED INDEXING you can either return 1 in base case OR use the same code and in main ans add 1 at last
     public int winner(int n, int k) {
         if(n == 1) return 0;   // bcz 0th guy is left only
 
