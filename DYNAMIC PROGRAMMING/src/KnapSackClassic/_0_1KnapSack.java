@@ -35,10 +35,10 @@ public class _0_1KnapSack {
         // similarly every possible combination of values would be stored for n items within wt of W
 
         // initialization
-        for(int i = 0; i < dp.length; i++) { // 0th col
+        for(int i = 0; i < dp.length; i++) { // 0th col (what if there is no item max profit would be 0)
             dp[i][0] = 0;
         }
-        for(int i = 0; i < dp[0].length; i++) { // 0th row
+        for(int i = 0; i < dp[0].length; i++) { // 0th row (what if W(capacity) is zero) max profit would be 0
             dp[0][i] = 0;
         }
 
@@ -80,11 +80,12 @@ public class _0_1KnapSack {
         int W = 7;
         // ans should be : 75
 
-        int[][] dp = new int[val.length+1][W+1];
+        int[][] dp = new int[val.length][W+1];
         for(int i = 0; i < dp.length; i++) {
             Arrays.fill(dp[i], -1);
         }
-        System.out.println(memoization(val, wt, W, 0, dp));
+        System.out.println(memoization(val, wt, W, 0, dp));  // here we are starting from idx 0 so ans in the dp would be at 0th row and 7th col
+        print(dp);
 
         System.out.println(tabulation(val, wt, W));
     }
