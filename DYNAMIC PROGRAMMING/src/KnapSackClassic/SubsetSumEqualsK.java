@@ -25,8 +25,8 @@ public class SubsetSumEqualsK {
         public static boolean tabulation(int[] arr, int target) {
             int n = arr.length;
             boolean[][] dp = new boolean[n+1][target+1];
-            // initialization
-            for(int i = 0; i < n+1; i++) {  // 0th col
+            // base case initialization
+            for(int i = 0; i < n+1; i++) {  // 0th col bcz we will always have a subset whose sum is zero and that is empty subset
                 dp[i][0] = true;
             }
             // NOTE : Here we have to initialize 0th row to false also bcz if we do not have

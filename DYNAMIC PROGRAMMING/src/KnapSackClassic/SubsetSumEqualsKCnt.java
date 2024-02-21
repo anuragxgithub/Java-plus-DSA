@@ -14,7 +14,7 @@ public class SubsetSumEqualsKCnt {
 
     // memoization
     public static int memoization(int[] arr, int target, int idx, int[][] memo) {
-        if(target==0 && idx == arr.length) return 1; // ⭐⭐⭐ important here return only when you reach the leaf node other wise some subsets will be left if u just return when target becomes 0
+        if(target==0 && idx == arr.length) return 1; // ⭐⭐⭐ important here return only when you reach the leaf node otherwise some subsets might be left if u just return when target becomes 0
         if(idx == arr.length) return 0;
         
         if(memo[idx][target] != -1) return memo[idx][target];
