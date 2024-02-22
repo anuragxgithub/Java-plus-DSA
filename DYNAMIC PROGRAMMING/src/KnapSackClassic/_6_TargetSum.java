@@ -1,7 +1,7 @@
 /*
 https://leetcode.com/problems/target-sum/description/
 
-Prerequisite: CntSubsetSumDiff.java   & SubsetSumEqulasKCnt.java
+PREREQUISITE: _5_PartitionWithGiveDiff.java   &  _3_SubsetSumEqulasKCnt.java ⭐⭐
 Same problem just asked in different style underlying logic is same.
 
 Same thing is happening we are dividing the array into two subsets and we need to find out
@@ -11,23 +11,23 @@ Lets assign a random signs from any possible ans
    [1,1,1,3,2]  target = 2
     /     \
 [1,1,3] - [1+2]       taken rhs - as common
-The problem is reduced to CountsubsetSumDiff easy now we can reduce it to knapsack already 
+The problem is reduced to CountsubsetSumDiff easy now we can reduce it to subsetSumEqualsK already 
 studied.
 
-s1 = (target+sum(arr))/2
-Number of "subsets whose sum is equal to s1" is our ans.
+s1 = (target+sum(arr))/2          this is basically sum of subset 1 count how many possible subsets whose sum is equal to this that will be our ans.
 
 Easy peasy.
+BaseCases are imp. since target can be -ve ⭐
 */
 
 package KnapSackClassic;
 
 import java.util.Arrays;
 
-public class TargetSum {
+public class _6_TargetSum {
     class Solution {
         static int total = 0;
-        // MEMOIZATION METHOD 1  (requires some knowledge to reduce the problem into clear knapsack prob.)
+        // MEMOIZATION METHOD 1  (requires some knowledge to reduce the problem into clear subsetSumEqualsK prob.)
         public static int memoization(int[] arr, int sum, int idx, int[][] memo) {
             if(sum == 0 && idx == arr.length) return 1;  // if idx == arr.length only then valid subset don't forget
             if(idx == arr.length) return 0;

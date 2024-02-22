@@ -5,7 +5,7 @@ https://www.geeksforgeeks.org/problems/minimum-sum-partition3317/1?
 
 package KnapSackClassic;
 
-public class MinimumSumPartition {
+public class _7_MinimumSumPartition {
     public static int tabulation(int[] arr, int target) {
         int n = arr.length;
         boolean[][] dp = new boolean[n+1][target+1];
@@ -28,9 +28,8 @@ public class MinimumSumPartition {
             }
         }
 
-        
         int minDiff = Integer.MAX_VALUE;
-        for(int i = 0; i <= (target/2); i++) {
+        for(int i = 0; i <= (target/2); i++) {    // target/2 = (total/2)
             if(dp[n][i]) {  // possible subsets
                minDiff = Math.min(target - (2*i), minDiff);
             }

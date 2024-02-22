@@ -10,7 +10,7 @@ package KnapSackClassic;
 
 import java.util.Arrays;
 
-public class SubsetSumEqualsKCnt {
+public class _3_SubsetSumEqualsKCnt {
 
     // memoization
     public static int memoization(int[] arr, int target, int idx, int[][] memo) {
@@ -38,7 +38,7 @@ public class SubsetSumEqualsKCnt {
         }
 
         for(int i = 1; i < n+1; i++) {
-            for(int j = 0; j < target+1; j++) { //NOTE: HERE WE HAVE TO START J WITH 0⭐⭐⭐ becuase we need to consider empty set too {1,0} will have 2 subsets whose sum equls to 0
+            for(int j = 0; j < target+1; j++) { //NOTE: HERE WE HAVE TO START J WITH 0⭐⭐⭐ becuase wht if array elment contains 0 in it then there logically at 0th item and target = 0 count should be 2 dry run for {1,0} to understand this 
                 int v = arr[i-1];
                 if(v <= j) {
                     dp[i][j] = dp[i-1][j-v] + dp[i-1][j];

@@ -24,6 +24,8 @@ public class _0_1KnapSack {
             dp[idx][W] = memoization(val, wt, W, idx+1, dp);
             return dp[idx][W];
         }
+        // This if else thing can take much lines you just put one if that way is better
+        // saves writing extra code
     }
 
     // Time : O(n*W)

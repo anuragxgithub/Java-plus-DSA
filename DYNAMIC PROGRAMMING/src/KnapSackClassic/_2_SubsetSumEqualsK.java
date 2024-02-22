@@ -3,7 +3,7 @@
 
 package KnapSackClassic;
 
-public class SubsetSumEqualsK {
+public class _2_SubsetSumEqualsK {
 
         // MEMOIZATION :   time : O(N*sum)
         public static boolean memoization(int[] arr, int n, int sum, int idx, Boolean[][] memo) {
@@ -43,7 +43,9 @@ public class SubsetSumEqualsK {
                     }
                 }
             }
-            //you can do this to include, don't include way using || or
+            //you can do this to include & don't include way using || or
+            // eg: dp[i][j] = dp[i-1][dp[j-arr[i-1]]] || dp[i-1][j];   include || exclude
+            // but above one is lil bit optimised as we are leveraging the already filled false value
             print(dp);
             return dp[n][target];
         }
