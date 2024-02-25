@@ -32,6 +32,10 @@ them down into smaller
 subproblems, but they differ in the direction in which they construct the solutions.
 
 NOTE:
-If only one parameter is changing in recursive call that means 1D dp will be used.
-Similarly for 2D dp.
-Not a universal statement but most probable.
+1. If only one parameter is changing in recursive call that means 1D dp will be used.
+   Similarly for 2D dp.
+   Not a universal statement but most probable.
+2. You can easily change the memoization code to tabulation by just changing the
+   recursive calls to to dp[] statement. And recursive work will be done using loop.
+   And you can change SOME tabulation code to space optimization by replacing the 
+   creation of n sized array and identifying the dependencies.
