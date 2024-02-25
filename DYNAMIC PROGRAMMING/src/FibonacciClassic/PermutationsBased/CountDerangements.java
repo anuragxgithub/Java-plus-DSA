@@ -5,7 +5,7 @@ https://www.codingninjas.com/studio/problems/count-derangements_873861?leftPanel
 See how the formula is derived.
 */
 
-package FibonacciClassic;
+package FibonacciClassic.PermutationsBased;
 
 public class CountDerangements {
     static final int MOD = (int)1e9+7;
