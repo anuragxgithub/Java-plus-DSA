@@ -51,7 +51,7 @@ public class SumPossible {
                |1
                |
                0
-               Edge wt represent the value which we used from numbers i am subtracting the all possible numbers
+               Edge wt represent the value which we used from numbers, I am subtracting the all possible numbers
                from the current amount until i got zero if i am able to get to zero that means sum is possible for the
                givne amount from given numbers in nums.
                

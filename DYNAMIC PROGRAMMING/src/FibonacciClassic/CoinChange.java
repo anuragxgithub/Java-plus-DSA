@@ -8,7 +8,7 @@ public class CoinChange {
         if(amount == 0) return 0;
         if(memo[amount] != -1) return memo[amount];
 
-        int minCoins = 100010;
+        int minCoins = 100010;   // if ans amount could not be made to 0 it will be returned from tail return statement
         for(int i = 0; i < coins.length; i++) {
             if(amount - coins[i] >= 0) {
                 minCoins = Math.min(1 + minCoins(coins, amount-coins[i], memo), minCoins); // because at every step you are taking 1 coin

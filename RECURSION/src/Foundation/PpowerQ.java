@@ -1,3 +1,6 @@
+/*
+https://leetcode.com/problems/powx-n/description/
+ */
 package Foundation;
 
 public class PpowerQ {

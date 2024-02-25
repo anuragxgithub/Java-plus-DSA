@@ -30,3 +30,8 @@ Tabulation: Bottom-up approach where you start solving the smallest subproblems 
 Both approaches achieve the same goal of solving dynamic programming problems by breaking 
 them down into smaller
 subproblems, but they differ in the direction in which they construct the solutions.
+
+NOTE:
+If only one parameter is changing in recursive call that means 1D dp will be used.
+Similarly for 2D dp.
+Not a universal statement but most probable.
