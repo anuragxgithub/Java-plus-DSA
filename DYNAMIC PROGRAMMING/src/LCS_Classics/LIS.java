@@ -6,6 +6,9 @@ Ans: Subsequence in which elements are in increasing order.
      Note: relative order remains same.
      Only unique elements are allowed.
 
+Note : we have to think of reducing the problem into simpler lcs finding problem
+       where we usually have 2 arrays or string.
+
 Approach:
 1. Create an array by removing the duplicate elements from original array if any.
 2. Sort the newly created array arr2. Becuase we want increasing subsequence.

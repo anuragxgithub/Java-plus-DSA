@@ -25,7 +25,8 @@ public class LongestCmnSubstr {
         if (dp[i][j] != null) return dp[i][j];
         int common = 0;
         if (s1.charAt(i-1) == s2.charAt(j-1)) {
-            common = 1 + memo2(s1, s2, i - 1, j - 1, dp);
+            common = 1 + memo2(s1, s2, i - 1, j - 1, dp); // we don't need to carry the max
+            // length here we want consecutive common chars
         }
         ans = Math.max(ans, common);
         memo2(s1, s2, i - 1, j, dp);
