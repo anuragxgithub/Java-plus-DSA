@@ -2,6 +2,7 @@
 
 https://leetcode.com/problems/unique-binary-search-trees/
 
+DRY RUN IS GIVEN
 */
 
 package CatalanClassics;

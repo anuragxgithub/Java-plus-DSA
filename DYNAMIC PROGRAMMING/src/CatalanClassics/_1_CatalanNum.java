@@ -4,7 +4,7 @@ C0 = 1,   C1 = 1,   C2 = C0.C1 + C1.C0 = 2,   C3 = C0.C2 + C1.C1 + C2.C0 = 5
 C4 = 14 , C5 = 42
 
 Basically:
-Cn = C0.Cn-1 + C1.Cn-2 + C2.Cn-3 + C3.Cn-4 .... Cn-1.C0
+  [ Cn = C0.Cn-1 + C1.Cn-2 + C2.Cn-3 + C3.Cn-4 .... Cn-1.C0  ] REMEMBER THIS
 
 Cn = CiCn-i-1
 

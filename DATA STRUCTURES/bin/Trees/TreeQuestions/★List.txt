@@ -1,6 +1,7 @@
 These are thse questions which I solved while learning the tree concepts and about its questions:
 EasyPeasies 
 1. LeetCode 102
+   LeetCode 222
 2. LeetCode 637  (Google)
 3. Level Order Successor of a node. (Google)   
 4. LeetCode 103   (fang)
