@@ -50,6 +50,7 @@ public class _1_CatalanNum {
 
     // Tabulation  O(n^2)
     public static int tab(int n) {
+        if(n == 0) return 1;
         int[] dp = new int[n+1];
         dp[0] = dp[1] = 1;
  

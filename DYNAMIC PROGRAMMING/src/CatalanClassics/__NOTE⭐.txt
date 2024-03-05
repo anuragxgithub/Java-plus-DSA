@@ -1,0 +1,8 @@
+n’th Catalan Number can also be evaluated using the direct formula. 
+
+[ T(n) = (2n)! / (n+1)!n! ]
+
+--PATTERN OBSERVATION--
+In catalan number questions we usually take pair of things we are considering
+and arrang the rest with respect to that pair.
+(left right,  up down , inside outside)
