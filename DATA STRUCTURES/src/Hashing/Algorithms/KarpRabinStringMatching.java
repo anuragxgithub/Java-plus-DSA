@@ -1,3 +1,5 @@
+// https://www.geeksforgeeks.org/problems/search-pattern-rabin-karp-algorithm--141631/1  ⭐
+
 package Hashing.Algorithms;
 /*
 The Rabin-Karp algorithm is a string searching algorithm that efficiently finds the occurrence 
@@ -7,6 +9,47 @@ find multiple occurrences of a pattern in a large text.
 */
 
 public class KarpRabinStringMatching {
+    class RabinKarp {
+        private final int  PRIME = 101;       // you can choose any prime number
+        
+        private double calculateHashCode(String str) {
+            double hash = 0;
+            for(int i = 0; i < str.length(); i++) {
+                hash += str.charAt(i) * Math.pow(PRIME, i);   // i -> representing idx of each char we are considering for each window 
+            }
+            return hash;
+        }
+
+        private double updateHashCode(double prevHash, char oldChar, char newChar, int patternLength) {
+            // this is needed when we move ahead one char and create new window to match and
+            // this should be done in constant time (This can be considered as rolling hash technique)
+            double newHash = (prevHash-oldChar) / PRIME;
+            newHash += newChar * Math.pow(PRIME, patternLength-1);   // prime no is given a power which is last equal to last idx as new char added in new window is from last 
+            return newHash;
+        }
+
+        public void search(String text, String pattern) {
+            // 'text' is what is given and 'pattern' is what we need to find from text
+            int patternLength = pattern.length();
+            double patternHash = calculateHashCode(pattern);
+            double windowHash = calculateHashCode(text.substring(0, patternLength));
+
+            // Now check whether current window hash is matching to pattern hash
+            for(int i = 0; i < text.length() - patternLength+1; i++) {   // if (i < text.length() - patternLength+1) and if i exceeds this length then obviouly pattern can't be found in a substring which is smaller than the pattern itself
+                if(patternHash == windowHash) {
+                    // confirm it that wheter actually it is equal or not bz it may be possible that two words will have same hashCode but very less probability
+                    if(text.substring(i, i+patternLength).equals(pattern)) {
+                        System.out.println("Pattern found at index : " + i); 
+                    }
+                }
+                if(i < text.length() - patternLength) {
+                    windowHash = updateHashCode(windowHash, text.charAt(i), text.charAt(i + patternLength), patternLength);
+                }
+
+            }
+        }
+    }
+    
     public static void main(String[] args) {
         // // Que) find where string a is substring of string b?
         // String a = "Anurag";            //lets say size is m
@@ -67,52 +110,11 @@ public class KarpRabinStringMatching {
          https://chat.openai.com/share/b71fb3ce-047c-4aa1-a952-f69d9efce87a
         */
 
-        KarpRabinStringMatching x = new KarpRabinStringMatching();
+        KarpRabinStringMatching x = new KarpRabinStringMatching();  // (you can make the class static to remove this line)
 
         RabinKarp algorithm = x.new RabinKarp();
         algorithm.search("ShivaAmanAnuragLolo", "Anurag");
         
-    }
-
-    class RabinKarp {
-        private final int  PRIME = 101;       // you can choose any prime number
-        
-        private double calculateHashCode(String str) {
-            double hash = 0;
-            for(int i = 0; i < str.length(); i++) {
-                hash += str.charAt(i) * Math.pow(PRIME, i);   // i -> representing idx of each char we are considering for each window 
-            }
-            return hash;
-        }
-
-        private double updateHashCode(double prevHash, char oldChar, char newChar, int patternLength) {
-            // this is needed when we move ahead one char and create new window to match and
-            // this should be done in constant time (This can be considered as rolling hash technique)
-            double newHash = (prevHash-oldChar) / PRIME;
-            newHash += newChar * Math.pow(PRIME, patternLength-1);   // prime no is given a power which is last equal to last idx as new char added in new window is from last 
-            return newHash;
-        }
-
-        public void search(String text, String pattern) {
-            // 'text' is what is given and 'pattern' is what we need to find from text
-            int patternLength = pattern.length();
-            double patternHash = calculateHashCode(pattern);
-            double windowHash = calculateHashCode(text.substring(0, patternLength));
-
-            // Now check whether current window hash is matching to pattern hash
-            for(int i = 0; i < text.length() - patternLength+1; i++) {   // if (i < text.length() - patternLength+1) and if i exceeds this length then obviouly pattern can't be found in a substring which is smaller than the pattern itself
-                if(patternHash == windowHash) {
-                    // confirm it that wheter actually it is equal or not bz it may be possible that two words will have same hashCode but very less probability
-                    if(text.substring(i, i+patternLength).equals(pattern)) {
-                        System.out.println("Pattern found at index : " + i); 
-                    }
-                }
-            if(i < text.length() - patternLength) {
-                windowHash = updateHashCode(windowHash, text.charAt(i), text.charAt(i + patternLength), patternLength);
-            }
-
-            }
-        }
     }
 
     /*

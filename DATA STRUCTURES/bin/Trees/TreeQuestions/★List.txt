@@ -1,3 +1,13 @@
+Basic Questions:
+https://www.geeksforgeeks.org/problems/size-of-binary-tree/1
+
+https://www.geeksforgeeks.org/problems/count-leaves-in-binary-tree/1?
+https://www.geeksforgeeks.org/problems/count-non-leaf-nodes-in-tree/1?
+https://www.geeksforgeeks.org/problems/height-of-binary-tree/1?
+
+Easy-Mid Question:
+https://leetcode.com/problems/find-largest-value-in-each-tree-row/
+
 These are thse questions which I solved while learning the tree concepts and about its questions:
 EasyPeasies 
 1. LeetCode 102
