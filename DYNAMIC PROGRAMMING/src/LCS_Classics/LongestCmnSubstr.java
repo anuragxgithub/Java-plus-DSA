@@ -75,3 +75,5 @@ public class LongestCmnSubstr {
         return tabulation(S1, S2, n, m);
     }
 }
+// https://www.geeksforgeeks.org/problems/longest-repeating-and-non-overlapping-substring3421/1
+// H.W.
