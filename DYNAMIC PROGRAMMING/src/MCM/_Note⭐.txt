@@ -1,2 +1,24 @@
 This is another classification of dp pattern.
 => Dp on grid.            (MCM)
+
+WHAT WE HAVE TO DO IN MOST MCM VARIATION PROBLEM ??
+-> You could be given an array or string.
+-> You will use two variables i and j which reperesents starting and ending point.
+-> You will need the third variable k which is used to partition the string or array 
+   it usually go from i to j.
+-> You divid the problem into smaller problem and find out solution 1 and solution 2
+   with the help of solution 1 and solution 2 you will find another solution, solution 3.
+   And using these you have to return the final ans according to question. (=,- or anything).
+
+How to recursive code of mcm variant question would look like:
+
+    mcm(arr/str, i, j) {
+        // base case 
+        if(i >= j)
+
+        for(k = i to k < j)   // depends on question there might be slight up down
+            int ans1 = mcm(i, k);  // can be i to k-1 depends on question
+            int ans1 = mcm(k+1, j);  
+            int ans3 = ...;
+            comapare(tempAns, ans)
+    }

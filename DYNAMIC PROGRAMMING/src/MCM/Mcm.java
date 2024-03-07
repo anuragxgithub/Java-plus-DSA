@@ -7,6 +7,9 @@ SEE :
 IAMGES PRESENT IN THIS PACKAGE
 
 https://www.geeksforgeeks.org/problems/matrix-chain-multiplication0303/1
+
+
+Tabulation code is less intuitive you can choose any either Tabulation or Memoization.
 */
 
 package MCM;
@@ -47,6 +50,43 @@ public class Mcm {
         return dp[i][j] = ans;
     }
 
+    // TABULATION   (Here instead of filling table traditionally from left to right this time we'll fill table diagonally)
+    public static int mcmTab(int[] arr) {
+        int n = arr.length;
+        int[][] dp = new int[n][n];
+        // intialization 
+        for(int i = 0; i < n; i++) {   
+            dp[i][i] = 0;   // single matrix casee (cost of multiplication would be 0)
+        }
+
+        // bottom up
+        for(int len = 2; len <= n-1; len++) {   // represent col of table
+            for(int i = 1; i <= n-len; i++) {   // i represents rows for each len row is going till n-len
+                int j = i+len-1;  // col for each row i at given length len
+                dp[i][j] = Integer.MAX_VALUE;
+                for(int k = i; k<=j-1; k++) {
+                    int cost1 = dp[i][k];
+                    int cost2 = dp[k+1][j];
+                    int cost3 = arr[i-1] * arr[k] * arr[j];
+                    int finalCost = cost1 + cost2 + cost3;
+                    dp[i][j] = Math.min(dp[i][j], finalCost);
+                }
+            }
+        }
+        print(dp);      // bottom half table is useless (b/z we can't multiply matrix 2 to matrix 1 ...) 
+        return dp[1][n-1];
+    }
+
+
+    public static void print(int[][] dp) {
+        for(int i = 0;i< dp.length; i++) {
+            for(int j = 0;j < dp[0].length; j++) {
+                System.out.print(dp[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 3};
         int n = arr.length;
@@ -58,5 +98,8 @@ public class Mcm {
         int[][] dp = new int[n][n];
         for(int[] a : dp) Arrays.fill(a, -1);
         System.out.println(mcmMemo(arr, 1, n-1, dp));
+
+
+        System.out.println(mcmTab(arr));
     }
 }

@@ -70,11 +70,11 @@ public class HM_Implementation {
             }
             return -1;
         }
-        
+        @SuppressWarnings("unchecked")
         private void rehash() {  // as we know theory of rehasing (increasing the size of array)
             LinkedList<Node>[] oldBucket = buckets;
             N = N*2;        // update the value of N
-            buckets = new LinkedList[N];  // for this warning, we put @ at line 36
+            buckets = new LinkedList[N];  // for this warning, we put @
             // now our bucket/arr size doubled and all buckets are empty so lets first initialise the empty LLs in them
             for(int i = 0; i < buckets.length; i++) {
                 buckets[i] = new LinkedList<>();
