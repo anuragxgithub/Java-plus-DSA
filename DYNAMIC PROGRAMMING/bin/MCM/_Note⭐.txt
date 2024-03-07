@@ -14,7 +14,7 @@ How to recursive code of mcm variant question would look like:
 
     mcm(arr/str, i, j) {
         // base case 
-        if(i >= j)
+        if(i >= j) or (i > j) depends on Que
 
         for(k = i to k < j)   // depends on question there might be slight up down
             int ans1 = mcm(i, k);  // can be i to k-1 depends on question
