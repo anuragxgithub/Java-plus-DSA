@@ -16,7 +16,7 @@ package MCM;
 
 import java.util.Arrays;
 
-public class Mcm {
+public class _1_Mcm {
     // RECURSIVE
     public static int mcmRec(int[] arr, int i, int j){
         if(i == j) return 0;   // single matrix case. So, cost of operation will be 0

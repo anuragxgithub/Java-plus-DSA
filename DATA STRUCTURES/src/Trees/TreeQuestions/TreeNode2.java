@@ -31,43 +31,36 @@ public class TreeNode2 {
         // Adding more nodes to the tree if needed
         leftChild.left = new TreeNode2(3); // Left child of node 2
         leftChild.right = new TreeNode2(4); // Right child of node 2
-        rightChild.left = new TreeNode2(7); // Left child of node 3
-        rightChild.right = new TreeNode2(6); // Right child of node 3
-        leftChild.right.left = new TreeNode2(8); // Right child of node 2
+        // rightChild.left = new ForDebugging(7); // Left child of node 3
+        // rightChild.right = new ForDebugging(6); // Right child of node 3
+        // leftChild.right.left = new ForDebugging(8); // Right child of node 2
 
 
         // Now you have created a binary tree with the following structure:
         //        1
         //       / \
         //      2   5
-        //     / \ / \
-        //    3  4 7  6
-        //      /
-        //     8
-        int[] arr = {9, 1, 2, 8};
-
-        boolean ans = isPathExist(root, arr, 0);
-        if(ans) {
-            System.out.println(1);
-        } else {
-            System.out.println(0);
-        }
+        //     / \ 
+        //    3  4   
+        //      
+        //     
+        solve(root);
+        System.out.println(diameter);
+        diameter = 0;
     }
 
-    public static boolean isPathExist(TreeNode2 node, int[] arr, int index) {
-        if(node == null) {
-            return false;
-        }
+    static int diameter = 0;
+    public static int solve(TreeNode2 root) {
+        if(root == null) return 0;
 
-        if(index >= arr.length || node.val != arr[index]) {
-            return false;
-        }
+        int leftHeight = solve(root.left);
+        int rightHeight = solve(root.right);
+        int dia = leftHeight + rightHeight;
+        diameter = Math.max(dia, diameter);
 
-        if(node.left == null && node.right == null && index == arr.length-1) { // bcz path should be from root to leaf node
-            return true;
-        }
+        // sending max diameter for the current node
+        return Math.max(leftHeight, rightHeight) + 1;
 
-        return isPathExist(node.left, arr, index+1) || isPathExist(node.right, arr, index+1);
     }
 
 }

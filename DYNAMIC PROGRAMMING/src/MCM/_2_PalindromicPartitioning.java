@@ -8,7 +8,7 @@ in the worst case n-1 cuts are needed.  (divide each char into single char)
 
 package MCM;
 
-public class PalindromicPartitioning {
+public class _2_PalindromicPartitioning {
     public static boolean isPalindrome(String s, int i, int j) {
         while(i <= j) {
             if(s.charAt(i) != s.charAt(j)) return false;
@@ -19,7 +19,7 @@ public class PalindromicPartitioning {
     }
     // MEMOIZATION
     public static int mcmMemo(String s, int i, int j, Integer[][] dp) {
-        if(i >= j) return 0;  // if string becomes empty so cuts needed
+        if(i >= j) return 0;  // if string becomes empty or single char so cuts needed
 
         if(dp[i][j] != null) return dp[i][j];
 

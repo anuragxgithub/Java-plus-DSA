@@ -1,14 +1,18 @@
-Basic Questions:
-https://www.geeksforgeeks.org/problems/size-of-binary-tree/1
+------BASIC QUESTIONS------
 
+https://www.geeksforgeeks.org/problems/size-of-binary-tree/1
+https://www.geeksforgeeks.org/problems/sum-of-binary-tree/1?
 https://www.geeksforgeeks.org/problems/count-leaves-in-binary-tree/1?
 https://www.geeksforgeeks.org/problems/count-non-leaf-nodes-in-tree/1?
 https://www.geeksforgeeks.org/problems/height-of-binary-tree/1?
+LeetCode 104 (Faang, linkedIn, etc)
 
-Easy-Mid Question:
+------EASY-MID QUESTION------
+
 https://leetcode.com/problems/find-largest-value-in-each-tree-row/
+LeetCode 543 (Faang)
 
-These are thse questions which I solved while learning the tree concepts and about its questions:
+These are the questions which I solved while learning the tree concepts and about its questions:
 EasyPeasies 
 1. LeetCode 102
    LeetCode 222
@@ -23,9 +27,8 @@ EasyPeasies
 
 ----DFS(PreOder, PostOrder & InOrder stuff) Thing started from here----
 
-10. LeetCode 543 (Faang)
+
 11. LeetCode 226 (Faang)  easypeasy
-12. LeetCode 104 (Faang, linkedIn, etc)
 13. LeetCode 108 (Fag)  
 14. LeetCode 114  (fb, amazon, microsoft)
 15 LeetCode 98  (FAANG)  Good Question.   In these types of questions have patience and use pen and paper properly. Have believe in yourself.

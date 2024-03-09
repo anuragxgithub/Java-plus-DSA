@@ -1,0 +1,14 @@
+------- TREIS --------
+
+-> There are multiple parallel names for TREI data structure.
+-> Also known as Prefix Tree. bcz see common prefix words are stored once till the common prefix.
+-> Prevent us to store reduntant chars from string.
+-> Used to solve problems related to string specifically searching ones.
+-> Also know as retrieval tree. or Digital tree.
+                   ↓ 
+   Thats where its name came from Trie.
+
+Tries are k-ary tree. That means there can be k children of a node.
+
+Structur of trees becomes very dense. Thats why it take extra space but it provides
+good time complexity.
