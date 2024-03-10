@@ -1,0 +1,29 @@
+What is the time complexity when we iterate each digits(technically not possible
+but loop can go that much time) of binary representation of any given number?
+
+Is it O(n)??  NO.. b/z they are bits not actually a number.
+So how we know the complexity?
+
+
+1)As we know how to calculate the number of binary digits in any given decimal number
+  It is calculated by the formula [log2(n)+1] for n = 5(101) we get 3.
+  So the total bits are given by log formula so the
+
+  TIME COMPLEXITY OF PROGRAM WHEN WE ITERATE EACH NUMBER OF BINARY WILL BE:
+  🟌🟌🟌🟌🟌🟌🟌🟌🟌🟌  O(log(n))  🟌🟌🟌🟌🟌🟌🟌🟌🟌 SIMPIL Guyz not O(n)
+
+  Example:
+          int count = 0;
+          while((n & 1) == 0) {
+              count++;
+              n = n>>1;
+          }
+          System.out.println(count+1);
+          // O(log(n))
+
+SO Note one thing that whenever i am mentioning that "not optimised" or "naive approach" in
+any file under this folder. So don't interpret like that particular algo is bad NO.. b/z
+the worst Time complexity would be logn as we are not using more than 2 loops in Bit Manipulation
+questions and logn is is very much fine (For even a 1 million it is going to take approx 20 steps as log2(1milli) ~~ 20).So you can use any algo from this folder, different approaches
+opens mind and critical thinking ability that's why we use different approaches.
+HopeYouGotIt!
