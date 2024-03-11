@@ -7,19 +7,31 @@ https://www.geeksforgeeks.org/problems/count-non-leaf-nodes-in-tree/1?
 https://www.geeksforgeeks.org/problems/height-of-binary-tree/1?
 LeetCode 104 (Faang, linkedIn, etc)
 
-------EASY-MID QUESTION------
+------EASY QUESTION------
 
-https://leetcode.com/problems/find-largest-value-in-each-tree-row/
+LeetCode 222
 LeetCode 543 (Faang)
+LeetCode 110
+LeetCode 226 (Faang)
+LeetCode 100
+
+------MEDIUM QUESTION------
+
+LeetCode 102
+LeetCode 107 
+LeetCode 515  (Find Largest Value in Each Tree Row)
+https://www.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1 ⭐
+LeetCode 103   (fang)       (Level order traversal in spiral form) ⭐ (did in 3 ways)
+
+
+
 
 These are the questions which I solved while learning the tree concepts and about its questions:
 EasyPeasies 
-1. LeetCode 102
-   LeetCode 222
+   
 2. LeetCode 637  (Google)
 3. Level Order Successor of a node. (Google)   
-4. LeetCode 103   (fang)
-5. LeetCode 107   (fang)
+
 6. LeetCode 116    (Google London)
 7. LeetCode 199   (fb, amzon,etc)
 8. LeetCode 993  (FMA)
@@ -28,7 +40,7 @@ EasyPeasies
 ----DFS(PreOder, PostOrder & InOrder stuff) Thing started from here----
 
 
-11. LeetCode 226 (Faang)  easypeasy
+
 13. LeetCode 108 (Fag)  
 14. LeetCode 114  (fb, amazon, microsoft)
 15 LeetCode 98  (FAANG)  Good Question.   In these types of questions have patience and use pen and paper properly. Have believe in yourself.
