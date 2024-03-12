@@ -26,8 +26,11 @@ LeetCode 107
 LeetCode 515  (Find Largest Value in Each Tree Row)
 https://www.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1 ⭐
 LeetCode 103   (fang)       (Level order traversal in spiral form) ⭐ (did in 3 ways)
-
-
+LeetCode 513   ⭐ (Imp. DFS appraoch)
+LeetCode 199
+https://www.geeksforgeeks.org/problems/left-view-of-binary-tree/1
+https://www.geeksforgeeks.org/problems/top-view-of-binary-tree/1 ⭐ done in this package also (EasyPesy when done with DFS)
+https://www.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1
 
 
 These are the questions which I solved while learning the tree concepts and about its questions:
@@ -36,7 +39,6 @@ EasyPeasies
 3. Level Order Successor of a node. (Google)   
 
 6. LeetCode 116    (Google London)
-7. LeetCode 199   (fb, amzon,etc)
 9. LeetCode 101    (LinkedIn, Fb, Microsoft, etc)
 
 ----DFS(PreOder, PostOrder & InOrder stuff) Thing started from here----
