@@ -8,9 +8,9 @@ import java.util.Scanner;
 //Binary trees can be implemented by two ways 
 //1)Linked represention(just like the LL implementation)  2) Sequential Representation (using array)
 //Here we will look on 1st one 2nd one will be covered when we implement heap
-public class BinaryTree {
+public class _1_BinaryTree {
     
-    public BinaryTree() {   //constructor
+    public _1_BinaryTree() {   //constructor
 
     }
 
@@ -89,7 +89,7 @@ public class BinaryTree {
 
 
     public static void main(String[] args) {
-        BinaryTree tree = new BinaryTree();
+        _1_BinaryTree tree = new _1_BinaryTree();
         Scanner sc = new Scanner(System.in);
         tree.populate(sc);
         // tree.display();

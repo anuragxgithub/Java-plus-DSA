@@ -8,9 +8,9 @@ package Trees;
 //than the node's key, and all keys in its right subtree have values greater than the node's key.
 //2)Unique keys: Each key in the BST is unique, meaning no two nodes can have the same key.
 //3)Recursive structure: The left and right subtrees of a node are also binary search trees.
-public class BinarySearchTree {
+public class _2_BinarySearchTree {
 
-    public BinarySearchTree() {  //constructor
+    public _2_BinarySearchTree() {  //constructor
 
     }
 
@@ -153,7 +153,7 @@ public class BinarySearchTree {
 
 
     public static void main(String[] args) {
-        BinarySearchTree tree = new BinarySearchTree();
+        _2_BinarySearchTree tree = new _2_BinarySearchTree();
         int[] nums = {5,3,6,7,8,2,4};
         tree.populate(nums);
         tree.display();
