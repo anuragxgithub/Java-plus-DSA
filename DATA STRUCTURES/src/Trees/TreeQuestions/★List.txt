@@ -31,6 +31,22 @@ LeetCode 199
 https://www.geeksforgeeks.org/problems/left-view-of-binary-tree/1
 https://www.geeksforgeeks.org/problems/top-view-of-binary-tree/1 ⭐ done in this package also (EasyPesy when done with DFS)
 https://www.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1
+[
+  LeetCode 105 (Many companies)  ⭐  LeetCode 106 
+   Explanation is present in this package. (You can use HashMap instead of using findPos
+   method bcz that will take constant time in find pos)
+
+   Above 2 is more imp than this one. 
+   LeetCode 889 ⭐ DAMN!! (Explanation is present in this package with expl. of above 2 problems)
+]
+
+
+
+------HARD QUESTION------
+
+https://www.geeksforgeeks.org/problems/check-tree-traversal--141628/1  (did it in first attempt if you understand constructing tree from inorder and PreOder,PostOrder you can easily do it. NOT MUCH IMP)
+
+
 
 
 These are the questions which I solved while learning the tree concepts and about its questions:
@@ -51,7 +67,6 @@ EasyPeasies
 16. LeetCode 236 (FAANG)  (Important Question)	           Challenges your understanding of recursion
 17. LeetCode 230 (Amazon, LinkedIn)  (Good Question)  Challenges your understanding of recursion
 NOTE: Practice Path sum questions properly.
-18. LeetCode 105 (Many companies)  Important question   (you can try to do the same thing with inorder and postorder)
 19. LeetCode 297 (Important Question)  Link to understand the problem is given below:
 https://youtu.be/Qtf8ieq3zco?si=QxkGQtEF66iz2s3R (this is to understand only my solution is in java and uses queue)  also done here in this package you can debug if you want in file name : TreeNode4
 Copy paste the same code to quetion LeetCode 449   EasyPeasy

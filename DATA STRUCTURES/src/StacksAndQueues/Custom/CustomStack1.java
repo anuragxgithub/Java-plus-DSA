@@ -20,7 +20,7 @@ public class CustomStack1 {
     //PUSH
     public int push(int value) throws StackException {
         if(isFull()) {
-            throw new StackException("Cannot Push as Stack is Full");  //se we implemented our own exception handlation
+            throw new StackException("Cannot Push as Stack is Full");  //see we implemented our own exception handlation
         }
         ptr++;
         data[ptr] = value;
