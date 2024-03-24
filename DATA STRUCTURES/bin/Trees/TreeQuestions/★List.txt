@@ -1,4 +1,4 @@
-------BASIC QUESTIONS------
+                    ------BASIC QUESTIONS------
 
 https://www.geeksforgeeks.org/problems/size-of-binary-tree/1
 https://www.geeksforgeeks.org/problems/sum-of-binary-tree/1?
@@ -7,7 +7,8 @@ https://www.geeksforgeeks.org/problems/count-non-leaf-nodes-in-tree/1?
 https://www.geeksforgeeks.org/problems/height-of-binary-tree/1?
 LeetCode 104 (Faang, linkedIn, etc)
 
-------EASY QUESTION------
+
+                    ------EASY QUESTION------
 
 https://www.geeksforgeeks.org/problems/level-of-a-node-in-binary-tree/1  ⭐
 LeetCode 222
@@ -17,9 +18,13 @@ LeetCode 110
 LeetCode 226 (Faang)
 LeetCode 100
 LeetCode 993
+https://www.geeksforgeeks.org/problems/root-to-leaf-path-sum/1
+
+          <-- BSTs -->
+https://leetcode.com/problems/two-sum-iv-input-is-a-bst/
 
 
-------MEDIUM QUESTION------
+                    ------MEDIUM QUESTION------
 
 LeetCode 102
 LeetCode 107 
@@ -31,19 +36,39 @@ LeetCode 199
 https://www.geeksforgeeks.org/problems/left-view-of-binary-tree/1
 https://www.geeksforgeeks.org/problems/top-view-of-binary-tree/1 ⭐ done in this package also (EasyPesy when done with DFS)
 https://www.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1
-LeetCode 105 (Many companies)  ⭐  LeetCode 106  ⭐ LeetCode 889 
+[
+  LeetCode 105  LeetCode 106 (many companies) ⭐
+  Explanation is present in this package. (You can use HashMap instead of using findPos
+  method bcz that will take constant time in find pos)
+
+   Above 2 is more imp than this one. 
+   LeetCode 889 ⭐ DAMN!! (Explanation is present in this package with expl. of above 2 problems)
+]
+
+[
+---Literally EasyPeasy--- (Same concept is used horizontal dis/vertical position like in Top view of BT)
+  https://www.geeksforgeeks.org/problems/print-a-binary-tree-in-vertical-order/1
+  LeetCode 987       HARD TAGGED
+  https://www.geeksforgeeks.org/problems/diagonal-traversal-of-binary-tree/1
+  https://www.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/1 (Leetcode premium)  
+]
+LeetCode 2385  ⭐ (Explained on leetcode while submitting) 
 
 
 
-------HARD QUESTION------
+                    ------HARD QUESTION------
 
-https://www.geeksforgeeks.org/problems/check-tree-traversal--141628/1  (did it in first attempt if you understand constructing tree from inorder and PreOder,PostOrder you can easily do it.)
+https://www.geeksforgeeks.org/problems/check-tree-traversal--141628/1  (did it in first attempt if you understand constructing tree from inorder and PreOder,PostOrder you can easily do it. NOT MUCH IMP)
+LeetCode 124 (ALL COMPANIES) (Easiest)  ⭐  https://www.geeksforgeeks.org/problems/maximum-path-sum/1?
 
 
 
 
-These are the questions which I solved while learning the tree concepts and about its questions:
-EasyPeasies 
+
+
+
+
+
    
 3. Level Order Successor of a node. (Google)   
 
@@ -67,7 +92,6 @@ Thats why its clever move to undersand & solve this question and don't forget bc
 
 20. LeetCode 112  (Amazon)
 21. Leetcode 129 (FMA)
-22. LeetCode 124 (ALL COMPANIES) (Practice and Understand this problem)
 23. Done in this package. Que: (given Path exist or not from root to leaf)  FILE NAME : TreeNode2
 
 THIS BELOW ONE IS ACTUALLY CHALLENGING QUESTION
@@ -77,3 +101,4 @@ THIS BELOW ONE IS ACTUALLY CHALLENGING QUESTION
 
 To solve more questions on Tree you can check out this list.
 https://www.geeksforgeeks.org/top-50-tree-coding-problems-for-interviews/
+
