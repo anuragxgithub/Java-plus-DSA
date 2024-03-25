@@ -8,6 +8,7 @@ https://www.geeksforgeeks.org/problems/height-of-binary-tree/1?
 LeetCode 104 (Faang, linkedIn, etc)
 
 
+
                     ------EASY QUESTION------
 
 https://www.geeksforgeeks.org/problems/level-of-a-node-in-binary-tree/1  ⭐
@@ -15,12 +16,15 @@ LeetCode 222
 LeetCode 637  (Google)
 LeetCode 543 (Faang)
 LeetCode 110
+LeetCode 112
 LeetCode 226 (Faang)
 LeetCode 100
 LeetCode 993
 https://www.geeksforgeeks.org/problems/root-to-leaf-path-sum/1
+LeetCode 257 (Binary Tree Paths)   ⭐  https://www.geeksforgeeks.org/problems/root-to-leaf-paths/1?
 
-          <-- BSTs -->
+          --- BSTs ---
+
 https://leetcode.com/problems/two-sum-iv-input-is-a-bst/
 
 
@@ -29,6 +33,7 @@ https://leetcode.com/problems/two-sum-iv-input-is-a-bst/
 LeetCode 102
 LeetCode 107 
 LeetCode 515  (Find Largest Value in Each Tree Row)
+Leetcode 129 (FMA)   ⭐
 https://www.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/1 ⭐
 LeetCode 103   (fang)       (Level order traversal in spiral form) ⭐ (did in 3 ways)
 LeetCode 513   ⭐ (Imp. DFS appraoch)
@@ -53,7 +58,6 @@ https://www.geeksforgeeks.org/problems/bottom-view-of-binary-tree/1
   https://www.geeksforgeeks.org/problems/boundary-traversal-of-binary-tree/1 (Leetcode premium)  
 ]
 LeetCode 2385  ⭐ (Explained on leetcode while submitting) 
-
 
 
                     ------HARD QUESTION------
@@ -90,14 +94,10 @@ https://youtu.be/Qtf8ieq3zco?si=QxkGQtEF66iz2s3R (this is to understand only my 
 Copy paste the same code to quetion LeetCode 449   EasyPeasy
 Thats why its clever move to undersand & solve this question and don't forget bcz same thing will apply for all the questions like this.
 
-20. LeetCode 112  (Amazon)
-21. Leetcode 129 (FMA)
 23. Done in this package. Que: (given Path exist or not from root to leaf)  FILE NAME : TreeNode2
 
 THIS BELOW ONE IS ACTUALLY CHALLENGING QUESTION
 24. https://youtu.be/9D-vP-jcc-Y?si=APZ2n8H75fMhOlku   TIME STAMP : 4:26:38
-
-25. Done in this package : Iterative approach of DFS using stack.  FILE NAME : TreeNode3
 
 To solve more questions on Tree you can check out this list.
 https://www.geeksforgeeks.org/top-50-tree-coding-problems-for-interviews/
