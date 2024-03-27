@@ -1,6 +1,6 @@
 package Trees.TreeQuestions;
 // HERE JUST CREATED TO DEBUG SOME TREE PROBLEMS WHILE SOLVING IT ON LEETCODE
-//QUE : (given Path exist or not from root to leaf node)
+
 public class TreeNode2 {
     int val;
     TreeNode2 left;
@@ -44,7 +44,7 @@ public class TreeNode2 {
         //    3  4   
         //      
         //     
-        solve(root);
+        solve(root);            // LEETCODE 543
         System.out.println(diameter);
         diameter = 0;
     }
@@ -58,7 +58,7 @@ public class TreeNode2 {
         int dia = leftHeight + rightHeight;
         diameter = Math.max(dia, diameter);
 
-        // sending max diameter for the current node
+        // returning the maximum height of the subtree rooted at the current node
         return Math.max(leftHeight, rightHeight) + 1;
 
     }
