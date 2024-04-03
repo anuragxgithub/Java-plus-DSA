@@ -33,6 +33,7 @@ LeetCode 108  | https://www.geeksforgeeks.org/problems/array-to-bst4443/1?
 
                     ------MEDIUM QUESTION------
 
+(H.W.) LeetCode 2196
 LeetCode 102
 LeetCode 107 
 LeetCode 515  (Find Largest Value in Each Tree Row)
@@ -95,7 +96,9 @@ LeetCode 124 (ALL COMPANIES) (Easiest)  ⭐  https://www.geeksforgeeks.org/probl
 
           ---- BSTs ----
 
-
+https://www.geeksforgeeks.org/problems/sorted-list-to-bst/1?        (EasyPeasy)
+https://www.geeksforgeeks.org/problems/merge-two-bst-s/1?           (EasyPeasy)
+LeetCode 99  Recover BST             (Coming up with O(1) space Would make this HardQuestion)
 
 
 
@@ -117,4 +120,5 @@ THIS BELOW ONE IS ACTUALLY CHALLENGING QUESTION
 
 To solve more questions on Tree you can check out this list.
 https://www.geeksforgeeks.org/top-50-tree-coding-problems-for-interviews/
+
 
