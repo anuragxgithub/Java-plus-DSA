@@ -126,6 +126,38 @@ public class _6_IterativeTreeTraversals {
             
         }
     }
+    // Method 2 of inorder traversal:
+    // Simple:
+    // 1. (LEFT) Add all left nodes into the stack until possible.
+    // 2. (NODE) Pop the element and print it.
+    // 3. (RIGHT) Now go right to the popped item and add all left nodes
+    //    of it until possible.
+    //    Repeat the same process till stack is not empty.
+    public static void inorder2(TreeNode root) {
+        Stack<TreeNode> stack = new Stack<>();
+        ArrayList<Integer> list = new ArrayList<>();
+        while(root != null) {   // initialise the stack
+            stack.add(root);
+            root = root.left;
+        }
+
+        while(!stack.isEmpty()) {
+            TreeNode curr = stack.pop();
+            list.add(curr.val);
+            root = curr.right;
+
+            // now add its left most
+            while(root != null) {
+                stack.add(root);
+                root = root.left;
+            }
+        }
+        System.out.println(list);
+    }
+
+
+
+    // ---------------------------------------//
 
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);
@@ -142,6 +174,8 @@ public class _6_IterativeTreeTraversals {
 
         // Inorder Travesal
         inOrderT(root);
+        System.out.println();
+        inorder2(root);
 
     }
 }
